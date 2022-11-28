@@ -1,6 +1,6 @@
 # ShufflerPLUS
 
-<img src="/src/shuffler-icon.svg" align="center"
+<img src="/src/assets/shuffler-icon.svg" align="center"
      alt="ShufflerPLUS" width="300" height="300">
 
 ShufflerPLUS is a tool that makes morning Stand-ups fun and highly interactive.
