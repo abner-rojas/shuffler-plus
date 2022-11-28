@@ -1,0 +1,14 @@
+//(absoluteSize / breakpoint) * 100
+$breakpoint: 1440;
+$max-type-multiplier: 10;
+
+@mixin generateFluidType($className, $fontFamily, $fontWeight, $fontSizeMobile, $lineHeightMobile, $fontSizeDesktop, $lineHeightDesktop){
+  #{$className},
+  #{$className} p,
+  #{$className} span{
+    font-family: #{$fontFamily};
+    font-size: clamp(#{$fontSizeMobile}rem, calc(#{calc(((($fontSizeDesktop * 10) / $breakpoint) * 100) - 1)}vw + 1.44rem), #{$fontSizeDesktop * $max-type-multiplier}rem);
+    line-height: clamp(#{$lineHeightMobile}rem, calc(#{calc(((($lineHeightDesktop * 10) / $breakpoint) * 100) - 1)}vw + 1.44rem), #{$lineHeightDesktop * $max-type-multiplier}rem);
+    font-weight: #{$fontWeight} ;
+  }
+}

@@ -1,0 +1,102 @@
+.theme-the-beach{
+    --global-shadow-color: hsl(192, 97%, 14%, 52.7%);
+
+    //logo
+    --logo-fill-background-arrow: hsl(192, 94%, 22%, 50%);
+    --logo-fill-foreground-arrow: hsl(192, 94%, 22%);
+    --logo-fill-plus: hsl(0, 0%, 100%);
+    --logo-transition-delay: .2s;
+
+    //settings menu
+    --settings-toggle-color: hsl(48, 100%, 50%, 90%);
+    --settings-menu-shadow: 0px 1px 14px var(--global-shadow-color);
+    --settings-menu-background-color: hsl(18, 97%, 51%);
+    --settings-menu-transition-delay: .2s;
+
+    //main container
+    --main-container-background-color: hsl(10%, 40%, 10%);
+    --main-container-text-color: hsl(0, 0%, 0%);
+
+    //hr theme
+    --hr-background-color: hsl(192, 94%, 32%, 40%);
+    --hr-height: 1px;
+    --hr-transition-delay: .2s;
+
+    //main headings
+    --main-heading-color: hsl(46, 72%, 58%);
+    --main-heading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-subheading-stroke-width: 2px;
+    --main-subheading-outline-color: hsl(18, 97%, 51%);
+    --main-subheading-color: hsl(22, 8%, 85%, 70%);
+    --main-subheading-date-stroke-width: 2px;
+    --main-subheading-date-outline-color: hsl(22, 8%, 85%);
+    --main-subheading-date-color: hsl(18, 97%, 51%,  60%);
+    --main-subheading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-heading-transition-delay: .2s;
+    --main-subheading-transition-delay: .2s;
+
+    //window theme
+    --window-background-color-1: hsl(46, 72%, 58%, 40%);
+    --window-background-color-2: hsl(192, 94%, 32%, 40%);
+    --window-backdrop-filter: blur(4px);
+    --window-box-shadow: 0px 0px 40px 10px var(--global-shadow-color);
+    --window-border: none;
+    --window-border-radius: 10px;
+    --window-transition-delay: .2s;
+    --window-decal-image: url('./src/assets/beach-umbrella.png');
+    --window-decal-width: 250px;
+    --window-decal-height: 250px;
+    --window-decal-top: -90px;
+    --window-decal-left: -90px;
+
+    //speakers-setup
+    --speakers-header-heading-color: hsl(202, 97%, 15%);
+    --speakers-header-heading-transition-delay: .4s;
+    --speakers-header-background: hsl(188, 72%, 42%, 44%);
+    --speaker-setup-text-color: hsl(202, 97%, 27%, 90%);
+    --speakers-header-transition-delay: .6s;
+
+    //toggle button theme
+    --toggle-label-background-color: hsl(187, 95%, 36%, 70%);
+    --toggle-check-background-color: hsl(102, 66%, 40%);
+    --toggle-unchecked-background-color: hsl(9, 99%, 42%);
+    --toggle-icon-color: hsl(22, 8%, 86%);
+    --toggle-transition-delay: .7s;
+
+    //button theme
+    --button-bg: hsl(45, 69%, 58%);
+    --button-bg-hover: hsl(46, 72%, 88%);
+    --button-border-color: hsl(18, 97%, 51%);
+    --button-border-color-hover: hsl(18, 97%, 41%);
+    --button-border-width: 3px;
+    --button-border-style: solid;
+    --button-border-radius: 10px;
+    --button-text-color: hsl(18, 97%, 51%);
+    --button-text-color-hover: hsl(18, 97%, 41%);
+    --button-text-decoration: none;
+    --button-text-decoration-hover: none;
+    --button-transition-delay: unset;
+    --button-box-shadow: none;
+
+    //speakers names
+    --bigname-color: hsl(202, 97%, 15%);
+    --bigname-transition-delay: .7s;
+
+    --on-deck-color: hsl(204, 100%, 23%, 50%);
+    --on-deck-transition-delay: 1s;
+
+    --ice-breaker-color: hsl(18, 97%, 41%);
+    --ice-breaker-transition-delay: 1.3s;
+
+    //quotes
+    --quote-color: hsla(20, 82%, 2%, 0.684);
+    --quote-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --quote-stroke-width: 0;
+    --quote-outline-color: unset;
+
+    --author-color: rgb(12, 44, 160);
+    --author-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --author-stroke-width: 0;
+    --author-outline-color: unset;
+
+}

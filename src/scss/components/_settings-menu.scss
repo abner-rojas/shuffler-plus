@@ -1,0 +1,65 @@
+@use '../global/_typography' as *;
+
+.settings-menu{
+    @extend .paragraph--1;
+    min-width: 260px;
+    background: var(--settings-menu-background-color);
+    border: var(--settings-menu-border);
+    border-bottom-left-radius: 8px;
+    box-shadow: var(--settings-menu-shadow);
+    color: white;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    z-index: 10;
+    transition: top 1s ease;
+
+    &.visible{
+        top: 0;
+    }
+
+    ul{
+        display: grid;
+        gap: 20px;
+        li{
+            @extend .settings-controls;
+
+            &.inline-form{
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            &.toggle-form{
+                margin-left: -15px;
+            }
+        }
+
+        li ul{
+            list-style-type: none;
+            margin-left: 20px;
+            margin-top: 10px;
+            display: grid;
+            gap: 5px;
+
+            span{
+                cursor: pointer;
+
+                &.active{
+                    font-weight: bold;
+                }
+
+                &:hover{
+                    text-decoration: underline;
+                    &.active{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    button{
+        @extend .settings-controls;
+    }
+}

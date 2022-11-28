@@ -1,0 +1,32 @@
+.logo{
+
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    z-index: 999;
+
+    svg{
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo-0{
+        fill: var(--logo-fill-background-arrow);
+        transform: var(--logo-transition-delay);
+    }
+
+    .logo-1{
+        fill: var(--logo-fill-foreground-arrow);
+        transform: var(--logo-transition-delay);
+    }
+
+    .logo-2{
+        fill: var(--logo-fill-plus);
+        transform: var(--logo-transition-delay);
+    }
+}

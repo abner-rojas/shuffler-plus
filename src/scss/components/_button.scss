@@ -1,0 +1,35 @@
+@forward '../global/_typography';
+
+button,
+.button {
+  @extend .paragraph--2;
+  cursor: pointer;
+  position: relative;
+  display: grid;
+  width: max-content;
+  place-items: center;
+  padding: .4em .8em;
+  border-width: var(--button-border-width);
+  border-style: var(--button-border-style);
+  border-color: var(--button-border-color);
+  border-radius: var(--button-border-radius);
+  font-weight: 600;
+  transition: all 1s var(--animation-curve);
+  transition-delay: var(--button-transition-delay);
+  background: var(--button-bg);
+  color: var(--button-text-color);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: var(--button-text-decoration);
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: var(--button-box-shadow);
+
+  &:hover {
+      background: var(--button-bg-hover);
+      color: var(--button-text-color-hover);
+      border-color: var(--button-border-color-hover);
+      text-decoration: var(--button-text-decoration-hover);
+  }
+}
+

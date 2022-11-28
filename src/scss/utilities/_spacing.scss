@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+//Padding & Margin Utilities
+@each $size-number, $size-value in $sizes {
+
+
+  $i: (index($sizes, ($size-number $size-value)) - 1);
+  $max: $i * $max-spacing-multiplier;
+
+  .padding{
+    &--#{$i}{
+      padding: clamp(#{$i}rem, #{$size-value}, #{$max}rem);
+    }
+
+    @each $side in $sides{
+      &--#{$side}-#{$i}{
+        padding-#{$side}: clamp(#{$i}rem, #{$size-value}, #{$max}rem);
+      }
+    }
+  }
+
+  .margin{
+    &--#{$i}{
+      margin: clamp(#{$i}rem, #{$size-value}, #{$max}rem);
+    }
+
+    @each $side in $sides{
+      &--#{$side}-#{$i}{
+        margin-#{$side}: clamp(#{$i}rem, #{$size-value}, #{$max}rem);
+      }
+    }
+  }
+ 
+}
+

@@ -1,0 +1,16 @@
+@use '../global/_typography' as *;
+
+figure{
+    blockquote{
+        -webkit-text-stroke-width: var(--quote-stroke-width);
+        -webkit-text-stroke-color: var(--quote-outline-color);
+        color: var(--quote-color);
+        text-shadow: var(--quote-text-shadow);
+    }
+    figcaption{
+        -webkit-text-stroke-width: var(--author-stroke-width);
+        -webkit-text-stroke-color: var(--author-outline-color);
+        color: var(--author-color);
+        text-shadow: var(--author-text-shadow);
+    }
+}

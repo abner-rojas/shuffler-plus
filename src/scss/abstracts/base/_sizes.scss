@@ -1,0 +1,30 @@
+$max-spacing-multiplier: 10;
+//multiples of 10px on 1440px
+
+$sizes: (
+    'size-0': 0,
+    'size-1': 0.6944444444444444vw,
+    'size-2': 1.3888888888888888vw,
+    'size-3': 2.083333333333333vw,
+    'size-4': 2.7777777777777777vw,
+    'size-5': 3.4722222222222223vw,
+    'size-6': 4.166666666666666vw,
+    'size-7': 4.861111111111112vw,
+    'size-8': 5.555555555555555vw,
+    'size-9': 6.25vw,
+    'size-10': 6.944444444444445vw,
+    'size-11': 7.638888888888889vw,
+    'size-12': 8.333333333333332vw,
+    'size-13': 9.027777777777777vw,
+    'size-14': 9.722222222222223vw,
+    'size-15': 10.416666666666668vw,
+    'size-16': 11.11111111111111vw,
+    'size-17': 11.805555555555555vw,
+    'size-18': 12.5vw,
+    'size-19': 13.194444444444445vw,
+    'size-20': 13.88888888888889vw,
+);
+
+$sides: inline, inline-start, inline-end, block, block-start, block-end, left, right, top, bottom;
+
+

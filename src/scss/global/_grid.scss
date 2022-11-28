@@ -1,0 +1,36 @@
+@use '../mixins' as *;
+
+:root{
+    --column-gap: 1.3888888888888888vw;
+}
+
+.grid {
+  $grid-columns: 12;
+  display: grid;
+  grid-template-columns: repeat(#{$grid-columns}, [col-start] 1fr);
+  column-gap: var(--column-gap);
+
+  &.no-gap {
+    column-gap: 0;
+  }
+
+
+  .col-#{$grid-columns}{
+    grid-column: col-start / span #{$grid-columns};
+  }
+
+  //column spans
+  @for $i from 1 through $grid-columns {
+    @for $g from 1 through $grid-columns {
+      .col-#{$g}-to-#{$i}{
+        grid-column: #{$g} / #{$i};
+      }
+    }
+  }
+
+}
+
+.place-center{
+  display: grid;
+  place-items: center;
+}

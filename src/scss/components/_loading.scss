@@ -1,0 +1,35 @@
+.loading{
+    background-color: #0D102A;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+
+    &>div{
+        display: grid;
+        place-items: center;
+        img.q4{
+            margin-top: -60px;
+            margin-left: -20px;
+            max-width: 144px;
+        }
+    }
+
+    img{
+        max-width: 44%;
+    }
+
+    &.disabled{
+        pointer-events: none;
+    }
+
+    .logo{
+            --logo-fill-background-arrow: rgba(255, 255, 255, 0.5);
+    --logo-fill-foreground-arrow: hsl(0, 0%, 100%);
+    --logo-fill-plus: hsl(209, 98%, 47%);
+    --logo-transition-delay: .2s;
+    }
+}

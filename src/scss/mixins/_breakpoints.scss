@@ -1,0 +1,12 @@
+  //breakpoints
+  @mixin layout-xl {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+  
+  @mixin layout-small {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }

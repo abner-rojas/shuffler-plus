@@ -1,0 +1,34 @@
+.speakers-setup{
+  display: grid;
+  width: 70vw;
+  color: var(--speaker-setup-text-color);
+
+  h3{
+    color: var(--speakers-header-heading-color);
+    transition-delay: var(--speakers-header-heading-transition-delay);
+  }
+  
+  .speakers-header{
+    display: inline-flex;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-between;
+    background: var(--speakers-header-background);
+    transition: 1s all var(--animation-curve);
+    transition-delay: var(--speakers-header-transition-delay);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  
+  .form{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: end;
+
+    form{
+      display: inline-flex;
+    }
+  }
+}
+

@@ -1,0 +1,116 @@
+.theme-neon{
+    --global-shadow-color: hsla(312, 97%, 44%, 1);
+
+    //logo
+    --logo-fill-background-arrow: rgba(255, 255, 255, 0.5);
+    --logo-fill-foreground-arrow: hsl(0, 0%, 100%);
+    --logo-fill-plus: hsl(310, 100%, 50%);
+    --logo-transition-delay: .2s;
+
+    //settings menu
+    --settings-toggle-color: hsl(0, 0%, 100%);
+    --settings-menu-shadow: 0px 1px 14px var(--global-shadow-color);
+    --settings-menu-background-color: rgba(0, 0, 0, 0.656);
+    --settings-menu-transition-delay: .2s;
+    --settings-menu-border: 2px solid hsl(60, 0%, 99%);
+
+    //main container
+    --main-container-background-color: hsl(0, 0%, 0%, 0);
+    --main-container-text-color: hsl(0, 0%, 100%);
+
+    //hr theme
+    --hr-background-color: rgba(53, 53, 53, 0.4);
+    --hr-height: 1px;
+    --hr-transition-delay: .2s;
+
+    //main headings
+    --main-heading-stroke-width: 2px;
+    --main-heading-outline-color: hsl(312, 100%, 93%);
+    --main-heading-color: hsl(0, 0%, 100%);
+    --main-heading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-subheading-stroke-width: 2px;
+    --main-subheading-outline-color: hsl(312, 100%, 93%);
+    --main-subheading-color: rgba(255, 255, 255, 0.2);
+    --main-subheading-date-stroke-width: 2px;
+    --main-subheading-date-outline-color: rgb(239, 255, 9);
+    --main-subheading-date-color: rgba(255, 255, 255, 0.2);
+    --main-subheading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-heading-transition-delay: .2s;
+    --main-subheading-transition-delay: .2s;
+
+    //window theme
+    --window-background-color-1: hsla(311, 100%, 26%, 0.4);
+    --window-background-color-2: hsla(208, 88%, 26%, 0.4);
+    --window-backdrop-filter: blur(4px);
+    --window-box-shadow: 0px 0px 40px 10px var(--global-shadow-color);
+    --window-border: 7px solid hsl(60, 0%, 99%);
+    --window-border-radius: 10px;
+    --window-transition-delay: .2s;
+    --window-decal-image: url('./src/assets/neon.png');
+    --window-decal-width: 300px;
+    --window-decal-height: 300px;
+    --window-decal-top: -120px;
+    --window-decal-left: -140px;
+    --window-decal-animation: rotation 10s infinite linear;
+
+    //speakers-setup
+    --speakers-header-heading-color: hsl(0, 0%, 100%);
+    --speakers-header-heading-transition-delay: .4s;
+    --speakers-header-background: rgba(0, 0, 0, 0.25);
+    --speaker-setup-text-color: hsla(0, 0%, 100%, 0.9);
+    --speakers-header-transition-delay: .6s;
+
+    //toggle button theme
+    --toggle-label-background-color: rgba(0, 0, 0, 0.321);
+    --toggle-check-background-color: rgb(77, 255, 0);
+    --toggle-unchecked-background-color: rgb(255, 38, 0);
+    --toggle-icon-color: rgb(0, 0, 0);
+    --toggle-transition-delay: .7s;
+    --toggle-speaker-name-text-shadow: 0px 1px 4px var(--global-shadow-color);
+
+    //button theme
+    --button-bg: hsla(0, 0%, 0%, 0.144);
+    --button-bg-hover: hsl(297, 100%, 96%);
+    --button-border-color: hsl(320, 100%, 50%);
+    --button-border-color-hover: hsl(320, 100%, 70%);
+    --button-border-width: 3px;
+    --button-border-style: solid;
+    --button-border-radius: 10px;
+    --button-text-color: hsl(320, 100%, 50%);
+    --button-text-color-hover: hsl(320, 100%, 70%);
+    --button-text-decoration: none;
+    --button-text-decoration-hover: none;
+    --button-transition-delay: unset;
+    --button-box-shadow: 0px 0px 40px 10px var(--global-shadow-color);
+
+
+    //speakers names
+    --bigname-color: hsla(181, 100%, 50%, 0.631);
+    --bigname-transition-delay: .7s;
+    --bigname-stroke-width: 4px;
+    --bigname-outline-color: hsl(0, 0%, 100%);
+    --bigname-text-shadow: 0px 4px 14px hsl(180, 100%, 76%);
+
+    --ice-breaker-color: hsla(0, 0%, 100%, 0.93);
+    --ice-breaker-transition-delay: 1.3s;
+    --ice-breaker-stroke-width: 1px;
+    --ice-breaker-outline-color: hsl(312, 96%, 56%);
+    --ice-breaker-text-shadow: 0px 0px 14px hsl(310, 100%, 50%);
+
+    --on-deck-color: hwb(0 100% 0% / 0.223);
+    --on-deck-transition-delay: 1s;
+    --on-deck-stroke-width: 2px;
+    --on-deck-outline-color: hsl(312, 100%, 93%);
+    --on-deck-text-shadow: 0px 1px 14px var(--global-shadow-color);
+
+    //quotes
+    --quote-color: hsl(0, 0%, 100%);
+    --quote-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --quote-stroke-width: 0;
+    --quote-outline-color: unset;
+
+    --author-color: rgba(255, 255, 255, 0.885);
+    --author-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --author-stroke-width: 0;
+    --author-outline-color: unset;
+}

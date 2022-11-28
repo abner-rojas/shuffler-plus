@@ -1,0 +1,35 @@
+.window{
+    position: relative;
+    isolation: isolate;
+    transition: all 1s var(--animation-curve);
+    transition-delay: var(--window-transition-delay);
+    background: linear-gradient(180deg, var(--window-background-color-1) 44%, var(--window-background-color-2) 100%);
+    backdrop-filter: var(--window-backdrop-filter);
+    box-shadow: var(--window-box-shadow);
+    border: var(--window-border);
+    border-radius: var(--window-border-radius);
+
+    &::before{
+        content: '';
+        position: absolute;
+        background-size: cover;
+        background-image: var(--window-decal-image);
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: var(--window-decal-width);
+        height: var(--window-decal-height);
+        top: var(--window-decal-top);
+        left: var(--window-decal-left);
+        z-index: -1;
+        animation: var(--window-decal-animation)
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

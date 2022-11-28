@@ -1,0 +1,44 @@
+@use '../global/_typography' as *;
+
+.form {
+    display: inline-flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+    gap: 5px;
+    // form{
+    //     display: inline-flex;
+    //     align-items: center;
+
+    // }
+    form{
+        display: inline-flex;
+        gap: 4px;
+    }
+    button{
+        cursor: pointer;
+    }
+    button,
+    input,
+    select{
+        @extend .paragraph--1;
+    }
+    select{
+        cursor: pointer;
+    }
+
+    input{
+        cursor: text;
+    }
+    
+    input, select{
+        display: grid;
+        align-items: center;
+        border: var(--button-border-width) solid;
+        border-radius: var(--button-border-radius);
+        border-color: var(--button-border-color);
+        background: var(--button-bg);
+        color: var(--button-text-color);
+        padding: .2em; 
+        box-shadow: var(--button-box-shadow);
+    }
+}

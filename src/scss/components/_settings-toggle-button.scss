@@ -1,0 +1,30 @@
+.settings-toggle-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+
+    button{
+        background: unset;
+        border: unset;
+        width: unset;
+        height: unset;
+        box-shadow: unset;
+        transition: rotate 1s ease;
+        cursor: pointer;
+
+        &:hover{
+            rotate: 180deg;
+        }
+    }
+
+    svg{
+        width: 44px;
+        height: 44px;
+        path{
+            fill: var(--settings-toggle-color);
+            width: 44px;
+            height: 44px;
+        }
+    }
+}

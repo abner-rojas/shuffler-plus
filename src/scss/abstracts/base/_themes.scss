@@ -1,0 +1,62 @@
+@forward './themes/the-beach';
+@forward './themes/space';
+@forward './themes/holidays';
+@forward './themes/neon';
+
+:root{
+    --animation-curve: cubic-bezier(.25,.75,.5,1.25);
+}
+
+
+// .theme-dark{
+//     --body-bg: var(--clr-dark-color);
+//     --body-text-color: var(--clr-light-color);
+//     --logo-1: var(--clr-red);
+//     --logo-2: var(--clr-pure-white);
+//     --logo-3: var(--clr-pure-white);
+//     --nav-bg: rgba(0,0,0,.8);
+//     --marquee-bg: transparent;
+//     --marquee-text: var(--clr-pure-white);
+//     --marquee-gradient: var(--clr-dark-color);   
+// }
+
+// .theme-light{
+//     --body-bg: var(--clr-light-color);
+//     --body-text-color: var(--clr-dark-color);
+//     --logo-1: var(--clr-red);
+//     --logo-2: var(--clr-light-color);
+//     --logo-3: var(--clr-dark-color);
+//     --nav-bg: rgba(255,255,255,.8);
+//     --marquee-bg: transparent;
+//     --marquee-text: var(--clr-dark-color);
+//     --marquee-gradient: var(--clr-light-color);
+// }
+
+// @media (prefers-color-scheme: light){
+//     :root{
+//         --body-bg: var(--clr-light-color);
+//         --body-text-color: var(--clr-dark-color);
+//         --logo-1: var(--clr-red);
+//         --logo-2: var(--clr-light-color);
+//         --logo-3: var(--clr-dark-color);
+//         --nav-bg: rgba(255,255,255,.8);
+//         --marquee-bg: var(--clr-pure-white);
+//         --marquee-text: var(--clr-dark-color);
+//         --marquee-gradient: var(--clr-pure-white);
+//     }
+// }
+
+// @media (prefers-color-scheme: dark){
+//     :root{
+//         --body-bg: var(--clr-dark-color);
+//         --body-text-color: var(--clr-light-color);
+//         --logo-1: var(--clr-red);
+//         --logo-2: var(--clr-pure-white);
+//         --logo-3: var(--clr-pure-white);
+//         --nav-bg: rgba(0,0,0,.8);
+//         --marquee-bg: var(--clr-dark-color);
+//         --marquee-text: var(--clr-pure-white);
+//         --marquee-gradient: var(--clr-dark-color);
+//     }
+// }
+

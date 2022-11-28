@@ -1,0 +1,38 @@
+@use '../mixins' as *;
+
+:root{
+    //constants
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --ff-body: 'Raleway', sans-serif;
+    --ff-heading: 'Cooper-black-std', sans-serif;
+    --max-multiplier: 10;
+}
+
+// @mixin generateType($className, $fontFamily, $fontSizeMobile (rem), $fontSizeDesktop (rem), $lineHeightMobile (rem), $lineHeightDesktop (rem))
+//generate fluid type
+@include generateFluidType('h1, .heading--1', 'var(--ff-heading)', 400, 3, 3.4, 7.2, 7.5);
+@include generateFluidType('h2, .heading--2', 'var(--ff-heading)', 400, 2, 2.4, 5.2, 5.5);
+@include generateFluidType('h3, .heading--3', 'var(--ff-heading)', 400, 1,1.4, 4.2, 4.5);
+@include generateFluidType('h4, .heading--4', 'var(--ff-heading)', 400, 1, 1.4, 4.2, 4.5);
+@include generateFluidType('h5, .heading--5', 'var(--ff-heading)', 400, 2.2, 2.6, 3.2, 3.5);
+@include generateFluidType('h6, .heading--6', 'var(--ff-heading)', 400, 1.8, 2.2, 2.2, 2.5);
+
+@include generateFluidType('.toggle-speaker-name', 'var(--ff-heading)', 400, 1.2, 1.2, 2.4, 2.4);
+@include generateFluidType('.eyebrow--1', 'var(--ff-heading)', 400, 1.2, 1.2, 1.8, 1.8);
+@include generateFluidType('.button-text--1', 'var(--ff-heading)', 400, 4, 4, 4, 4);
+
+@include generateFluidType('.bigname', 'var(--ff-heading)', 400, 6, 6, 10, 10);
+@include generateFluidType(blockquote, 'var(--ff-heading)', 400, 4, 4, 7, 7);
+@include generateFluidType(figcaption, 'var(--ff-heading)', 400, 2, 2, 4, 4);
+@include generateFluidType('.settings-controls', 'var(--ff-body)', 400, 1, 1, 2, 2);
+@include generateFluidType('.paragraph--1', 'var(--ff-heading)', 400, 1, 1, 1.4, 1.4);
+@include generateFluidType('.paragraph--2', 'var(--ff-heading)', 400, 1.4, 1.4, 2.4, 2.4);
+
+
+//paragraph spacing
+p + p {
+    margin-top: .8em;
+}

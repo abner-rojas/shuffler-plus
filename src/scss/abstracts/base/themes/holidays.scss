@@ -1,0 +1,102 @@
+.theme-holidays{
+    --global-shadow-color: hsl(41, 68%, 56%, .8);
+
+    //logo
+    --logo-fill-background-arrow: rgba(255, 255, 255, 0.5);
+    --logo-fill-foreground-arrow: hsl(0, 63%, 54%);
+    --logo-fill-plus: hsl(113, 50%, 42%);
+    --logo-transition-delay: .2s;
+
+    //settings menu
+    --settings-toggle-color: hsl(0, 0%, 100%);
+    --settings-menu-shadow: 0px 1px 14px var(--global-shadow-color);
+    --settings-menu-background-color: hsl(0, 0%, 0%, 70%);
+    --settings-menu-transition-delay: .2s;
+
+    //main container
+    --main-container-background-color: hsl(0, 0%, 0%, 0);
+    --main-container-text-color: hsl(0, 0%, 100%);
+
+    //hr theme
+    --hr-background-color: rgba(53, 53, 53, 0.4);
+    --hr-height: 1px;
+    --hr-transition-delay: .2s;
+
+    //main headings
+    --main-heading-color: hsl(0, 0%, 100%);
+    --main-heading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-subheading-stroke-width: 0;
+    --main-subheading-outline-color: hsla(18, 97%, 51%, 0);
+    --main-subheading-color: hsl(22, 8%, 85%, 70%);
+    --main-subheading-date-stroke-width: 0;
+    --main-subheading-date-outline-color: hsla(0, 0%, 71%, 0);
+    --main-subheading-date-color: rgb(239, 255, 9);
+    --main-subheading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-heading-transition-delay: .2s;
+    --main-subheading-transition-delay: .2s;
+
+    //window theme
+    --window-background-color-1: hsla(0, 78%, 41%, 0.7);
+    --window-background-color-2: hsla(113, 100%, 11%, 0.469);
+    --window-backdrop-filter: blur(4px);
+    --window-box-shadow: 0px 0px 20px 5px var(--global-shadow-color);
+    --window-border: none;
+    --window-border-radius: 10px;
+    --window-transition-delay: .2s;
+    --window-decal-image: url('./src/assets/wreath.png');
+    --window-decal-width: 300px;
+    --window-decal-height: 300px;
+    --window-decal-top: -120px;
+    --window-decal-left: -140px;
+
+    //speakers-setup
+    --speakers-header-heading-color: hsl(0, 0%, 100%);
+    --speakers-header-heading-transition-delay: .4s;
+    --speakers-header-background: hsla(0, 79%, 49%, 0.86);
+    --speaker-setup-text-color: hsla(0, 0%, 100%, 0.9);
+    --speakers-header-transition-delay: .6s;
+
+    //toggle button theme
+    --toggle-label-background-color: rgba(226, 20, 20, 0.445);
+    --toggle-check-background-color: rgb(59, 118, 34);
+    --toggle-unchecked-background-color: rgb(255, 0, 0);
+    --toggle-icon-color: hsla(22, 8%, 86%);
+    --toggle-transition-delay: .7s;
+
+    //button theme
+    --button-bg: hsla(0, 0%, 100%, 0.803);
+    --button-bg-hover: hsla(0, 0%, 100%, 0.903);
+    --button-border-color: unset;
+    --button-border-color-hover: unset;
+    --button-border-width: 0;
+    --button-border-style: solid;
+    --button-border-radius: 10px;
+    --button-text-color: hsl(0, 68%, 45%);
+    --button-text-color-hover: hsl(0, 100%, 50%);
+    --button-text-decoration: none;
+    --button-text-decoration-hover: none;
+    --button-transition-delay: unset;
+    --button-box-shadow: 0px 0px 20px 5px var(--global-shadow-color);
+
+
+    //speakers names
+    --bigname-color: hsl(0, 0%, 100%);
+    --bigname-transition-delay: .7s;
+
+    --on-deck-color: hsla(0, 0%, 100%, 0.549);
+    --on-deck-transition-delay: 1s;
+
+    --ice-breaker-color: hsla(42, 100%, 50%, 0.93);
+    --ice-breaker-transition-delay: 1.3s;
+
+    //quotes
+    --quote-color: hsl(0, 0%, 100%);
+    --quote-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --quote-stroke-width: 0;
+    --quote-outline-color: unset;
+
+    --author-color: rgba(255, 255, 255, 0.885);
+    --author-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --author-stroke-width: 0;
+    --author-outline-color: unset;
+}

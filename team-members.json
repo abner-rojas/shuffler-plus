@@ -1,0 +1,128 @@
+[
+    {
+      "id": 1,
+      "name": "Julia Joachimowicz",
+      "role": "im",
+      "here": true
+    },
+    {
+      "id": 2,
+      "name": "Emma Mallon",
+      "role": "im",
+      "here": true
+    },
+    {
+      "id": 3,
+      "name": "Jen Grajkowski",
+      "role": "im",
+      "here": true
+    },
+    {
+      "id": 4,
+      "name": "Jennifer Guo",
+      "role": "im",
+      "here": true
+    },
+    {
+      "id": 5,
+      "name": "Luis Díaz",
+      "role": "im",
+      "here": true
+    },
+    {
+      "id": 6,
+      "name": "Julianna Hindemith",
+      "role": "im",
+      "here": true
+    },
+    {
+      "id": 7,
+      "name": "Eduardo Arrangóiz",
+      "role": "im",
+      "here": true
+    },
+    {
+      "id": 8,
+      "name": "Abner Rojas",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 9,
+      "name": "Augusto Pavía Rosas",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 10,
+      "name": "Cesar Villegas",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 11,
+      "name": "Michael Li",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 12,
+      "name": "Jéssica Motta",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 13,
+      "name": "Kathryn Robertson",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 14,
+      "name": "Marcos Herrera",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 15,
+      "name": "Shaun Seeram",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 16,
+      "name": "Enrique Lozano",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 17,
+      "name": "Filip Swierczynski",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 18,
+      "name": "João Dantas",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 19,
+      "name": "Robert Ling",
+      "role": "dev",
+      "here": true
+    },
+    {
+      "id": 20,
+      "name": "Tyler Crone",
+      "role": "devlead",
+      "here": true
+    },
+    {
+      "id": 21,
+      "name": "Kevin Frade",
+      "role": "imlead",
+      "here": true
+    }
+  ]
