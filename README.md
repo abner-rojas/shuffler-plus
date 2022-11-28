@@ -25,14 +25,14 @@ Features:
 
 ### Installation and Setup
 
-Use the following to run:
+Use the following instuctions to install and run:
 
 <details><summary><b>Show instructions</b></summary>
 
 1. Install the preset:
 
     ```sh
-    $ npm install --save-dev size-limit @size-limit/preset-app
+    $ npm install
     ```
 
 2. Run dev environment:
