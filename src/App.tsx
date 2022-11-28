@@ -43,6 +43,9 @@ function App() {
   const [quotes, setQuotes] = useState<String>()
   const[resetSpeakersList, setResetSpeakersList] = useState<Boolean>(false)
 
+  console.log("Today", today)
+  
+
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
   }, [])
@@ -167,7 +170,7 @@ function App() {
       <div className="main-container padding--inline-2 padding--top-4 padding--bottom-2">
         <div className="headings margin--bottom-2">
           <h1 className="text-center" data-cursor-exclusion>Diamond Hands</h1>
-          <h2 className="text-center text-outline margin--bottom-4" data-cursor-exclusion>Stand-up <span className="date">{`${today.getMonth()}/${today.getDay()}/${today.getFullYear()}`}</span></h2>
+          <h2 className="text-center text-outline margin--bottom-4" data-cursor-exclusion>Stand-up <span className="date">{`${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`}</span></h2>
         </div>
 
         <div className={`speakers-setup window ${start ? 'fade-out' : null}`}>
