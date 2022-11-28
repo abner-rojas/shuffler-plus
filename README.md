@@ -7,13 +7,21 @@ ShufflerPLUS is a tool that makes morning Stand-ups fun and highly interactive.
 
 Features:
 
-* Set up **Roll Call** at the beginning.
-* State is saved in LocalStorage for Team member selections and Settings.
+* Set up the **Roll Call** at the beginning
+* State is saved in LocalStorage for **Team Member selections** and **Settings**
+* On-deck features next speaker, no more surprises!
+* IM Team Lead goes first, then shuffled IM/IC group, then shuffled DEV/QA/CONTENT, then back to DEV Team Lead
+* **Blingy** floating diamonds backdrop
+* Theme switcher: Beach, Holidays, Space and Neon themes currently available
 * Fluid typography
-* Blingy diamond backdrop
-* Theme switcher
-* Ice breaker questions
+* Ice breaker questions so team can get to know eachother better
 * Final inspirational quote
+
+ToDos:
+
+* Automatic **Birthday Theme** enabled on a team member's birthday
+* Weather app for each team member to showcase our diverse locales
+* ...suggest more features!!
 
 
 <p align="center">
