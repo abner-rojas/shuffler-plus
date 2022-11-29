@@ -9,7 +9,7 @@ Features:
 
 * Set up the **Roll Call** at the beginning
 * State is saved in LocalStorage for **Team Member selections** and **Settings**
-* On-deck features next speaker, no more surprises!
+* On-deck feature shows next speaker, no more surprises!
 * IM Team Lead goes first, then shuffled IM/IC group, then shuffled DEV/QA/CONTENT, then back to DEV Team Lead
 * **Blingy** floating diamonds backdrop
 * Theme switcher: Beach, Holidays, Space and Neon themes currently available

@@ -9,16 +9,13 @@ interface Speaker {
     here: boolean
 }
 
-export default function Speakers({updateSpeakers, resetSpeakers, speakers}){
-
-    const[reset, setReset] = useState<Boolean>(false)
+export default function Speakers({updateSpeakers, speakers}){
 
     const addSpeaker = (name: string, role: string) => {
         const ids = speakers.map((a) => a.id)
         const highestID = Math.max(...ids)
         const names = speakers.map((a) => a.name)
-        
-        const newArray = 
+
         //check for dupe name
         names.indexOf(name) === -1 ? updateSpeakers([...speakers, {id: highestID + 1, name: name, role: role, here: true}]) : null
     }

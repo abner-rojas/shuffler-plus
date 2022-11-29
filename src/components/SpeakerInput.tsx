@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface Speaker {
     id: number,
@@ -13,17 +13,21 @@ interface Props {
 }
 
 const SpeakerInput:React.FC<Props> = ({speaker, updateSpeaker}) => {
-    const [checked, setChecked] = useState(true)
-    
-    const rollCall = (e) => {
-        setChecked(checked => !checked)
-        updateSpeaker(e.target.value, !checked)
+
+    const [checked, setChecked] = useState<Boolean>(!speaker.here)
+
+    const handleToggle = (e) => {
+        updateSpeaker(e.target.value, !e.target.checked) 
     }
+
+    useEffect(() =>  {
+        setChecked(!speaker.here)
+    }, [speaker])
 
     return (
     <div className="speaker-input-group">
         <div className="toggle" data-cursor-color="rgba(0,0,0,0.3)">
-            <input id={speaker.id} type="checkbox" value={speaker.id} onChange={rollCall} defaultChecked={!speaker.here} />
+            <input id={speaker.id} type="checkbox" value={speaker.id} onChange={handleToggle} checked={checked} />
             <label htmlFor={speaker.id} className="toggle-item">
                 <div className="check"></div>
             </label>

@@ -35,28 +35,22 @@ function App() {
 
   const timeElapsed = Date.now()
   const today = new Date(timeElapsed)
+  const defaultSettings = {diamondCount: 10, theme: 'the-beach', showIceBreakers: true}
   const [loading, setLoading] = useState<Boolean>(true)
-  const [settings, setSettings] = useState<Settings>({diamondCount: 10, theme: 'the-beach', showIceBreakers: true})
+  const [settings, setSettings] = useState<Settings>(defaultSettings)
   const [speakers, setSpeakers] = useState<Array<Speaker>>([])
   const [start, setStart] = useState<Boolean>(false)
   const [questions, setQuestions] = useState<String>()
-  const [quotes, setQuotes] = useState<String>()
-  const[resetSpeakersList, setResetSpeakersList] = useState<Boolean>(false)
-
-  console.log("Today", today)
-  
+  const [quotes, setQuotes] = useState<resString>()
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
   }, [])
 
-
   //use default settting if localStorage settings not set
   useEffect(() => {
     
     if(localStorage.getItem('settings') === null){
-      
-      const defaultSettings = {diamondCount: 10, theme: 'the-beach', showIceBreakers: true}
       localStorage.setItem('settings', JSON.stringify(defaultSettings))
 
     } else {
@@ -68,6 +62,8 @@ function App() {
 
 
   const getSpeakersFromJSON = async () => {
+    console.log("getSpeakersFromJSON");
+    
     //get speakers from json file
     const response = await fetch('/team-members.json')
     const result: Array<Speaker> = await response.json()
@@ -117,8 +113,9 @@ function App() {
 
   const resetSpeakers = () => {
     localStorage.removeItem('speakers')
-    getQuestionsFromJSON()
-    // setResetSpeakersList(true)
+    localStorage.removeItem('settings')
+    getSpeakersFromJSON()
+    setSettings(defaultSettings)
   }
 
   //handle theme switch
@@ -174,7 +171,7 @@ function App() {
         </div>
 
         <div className={`speakers-setup window ${start ? 'fade-out' : null}`}>
-          <Speakers updateSpeakers={updateSpeakers} resetSpeakers={resetSpeakersList} speakers={speakers} />
+          <Speakers updateSpeakers={updateSpeakers} speakers={speakers} />
           <hr />
           <div className="padding--inline-2 padding--block-1 place-center">
             <button onClick={handleStart}>Start</button>
