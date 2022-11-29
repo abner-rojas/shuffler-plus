@@ -30,7 +30,7 @@
     --main-subheading-color: hsl(22, 8%, 85%, 70%);
     --main-subheading-date-stroke-width: 0;
     --main-subheading-date-outline-color: hsla(0, 0%, 71%, 0);
-    --main-subheading-date-color: rgb(239, 255, 9);
+    --main-subheading-date-color: hsl(58, 99%, 60%);
     --main-subheading-text-shadow: 0px 1px 14px var(--global-shadow-color);
     --main-heading-transition-delay: .2s;
     --main-subheading-transition-delay: .2s;
@@ -52,14 +52,14 @@
     //speakers-setup
     --speakers-header-heading-color: hsl(0, 0%, 100%);
     --speakers-header-heading-transition-delay: .4s;
-    --speakers-header-background: rgba(115, 115, 115, 0.4);
+    --speakers-header-background: hsla(0, 0%, 45%, 0.4);
     --speaker-setup-text-color: hsla(0, 0%, 100%, 0.9);
     --speakers-header-transition-delay: .6s;
 
     //toggle button theme
-    --toggle-label-background-color: rgba(120, 120, 120, 0.7);
-    --toggle-check-background-color: rgb(59, 118, 34);
-    --toggle-unchecked-background-color: rgb(138, 41, 24);
+    --toggle-label-background-color: hsla(0, 0%, 0%, 0.323);
+    --toggle-check-background-color: hsl(102, 72%, 39%);
+    --toggle-unchecked-background-color: hsl(360, 97%, 36%);
     --toggle-icon-color: hsla(22, 8%, 86%);
     --toggle-transition-delay: .7s;
 
@@ -95,7 +95,7 @@
     --quote-stroke-width: 0;
     --quote-outline-color: unset;
 
-    --author-color: rgba(255, 255, 255, 0.735);
+    --author-color: hsla(0, 0%, 100%, 0.735);
     --author-text-shadow: 0px 1px 14px var(--global-shadow-color);
     --author-stroke-width: 0;
     --author-outline-color: unset;
