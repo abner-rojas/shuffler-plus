@@ -1,7 +1,7 @@
 import loadingDiamond from '../assets/loading-diamond.gif'
 import q4Logo from '../assets/q4.svg'
 
-export default function Loading({show}){
+export default function Loading({show} : {show:boolean}){
 
     return (
         <div className={!show ? "loading fade-out disabled" : "loading"}>

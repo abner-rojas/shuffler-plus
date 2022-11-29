@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ToDoForm = ({ addSpeaker }) => {
+const ToDoForm = ({addSpeaker} : {addSpeaker:Function}) => {
 
     const [ inputName, setInputName ] = useState('')
     const [ inputRole, setInputRole ] = useState('im')

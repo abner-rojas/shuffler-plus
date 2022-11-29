@@ -1,18 +1,32 @@
 import { useState } from "react"
 
-export default function SettingsMenu({switchTheme, switchDiamonds, switchIceBreakers, resetSpeakers, settings}){
+interface Settings {
+    diamondCount: number,
+    theme: string | null,
+    showIceBreakers: boolean
+}
+
+interface Props {
+    switchTheme: Function
+    switchDiamonds: Function
+    switchIceBreakers: Function 
+    resetSpeakers: Function 
+    settings: Settings
+}
+
+const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, switchIceBreakers, resetSpeakers, settings}) => {
 
     const [visible, setVisible] = useState(false)
 
-    const handleThemeSwitch = (e) => {
+    const handleThemeSwitch = (e:any) => {
         switchTheme(e.target.dataset.theme)
     }
 
-    const handleDiamonds = (e) => {
+    const handleDiamonds = (e:any) => {
         switchDiamonds(e.target.value)
     }
 
-    const handleIceBreakersToggle = (e) => {
+    const handleIceBreakersToggle = (e:any) => {
         switchIceBreakers(!settings.showIceBreakers)
     }
 
@@ -69,3 +83,5 @@ export default function SettingsMenu({switchTheme, switchDiamonds, switchIceBrea
         </>
     )
 }
+
+export default SettingsMenu

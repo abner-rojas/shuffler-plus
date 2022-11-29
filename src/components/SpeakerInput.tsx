@@ -9,7 +9,7 @@ interface Speaker {
 
 interface Props {
     speaker: Speaker
-    changeSpeaker: any
+    updateSpeaker: Function
 }
 
 const SpeakerInput:React.FC<Props> = ({speaker, updateSpeaker}) => {

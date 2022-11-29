@@ -53,7 +53,7 @@ function App() {
     if(localStorage.getItem('settings') === null){
       localStorage.setItem('settings', JSON.stringify(defaultSettings))
     } else {
-      setSettings(JSON.parse(localStorage.getItem('settings')))
+      setSettings(JSON.parse(localStorage.getItem('settings')!))
     }
 
   }, [])
@@ -91,7 +91,7 @@ function App() {
     if(localStorage.getItem('speakers') === null){
         getSpeakersFromJSON()
     } else {
-        setSpeakers(JSON.parse(localStorage.getItem('speakers')))
+        setSpeakers(JSON.parse(localStorage.getItem('speakers')!))
     }
   }, [])
 

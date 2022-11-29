@@ -9,7 +9,7 @@ import space from "../assets/backgrounds/space.jpg"
 import holidays from "../assets/backgrounds/holidays.jpg"
 import neon from "../assets/backgrounds/neon.jpg"
 
-function Background({theme}) {
+function Background({theme}: {theme:string}) {
 
   let t = space
 
@@ -41,7 +41,7 @@ function Background({theme}) {
   )
 }
 
-export default function DiamondsBackground({theme, diamondCount}) {
+export default function DiamondsBackground({theme, diamondCount} : {theme:string, diamondCount:number}) {
 
   const[background, setBackground] = useState('beach')
   const[count, setCount] = useState(diamondCount)

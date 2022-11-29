@@ -4,16 +4,16 @@ import { useThree, useFrame } from "@react-three/fiber"
 import { useGLTF, MeshRefractionMaterial, CubeCamera } from "@react-three/drei"
 import diamondUrl from "../assets/dflat.glb?url"
 
-export default function Diamonds({count}){
+export default function Diamonds({count}: {count: number}){
 
     const { viewport, clock } = useThree()
-    const model = useRef()
+    const model = useRef<any>(null!)
     const { nodes } = useGLTF(diamondUrl)
     // Create random position data
-    const dummy = useMemo(() => new THREE.Object3D(), [parseInt(count)])
+    const dummy = useMemo(() => new THREE.Object3D(), [count])
     const diamonds = useMemo(
       () =>
-        new Array(...Array(parseInt(count))).map((_, i) => ({
+        new Array(...Array(count)).map((_, i) => ({
           position: [THREE.MathUtils.randFloatSpread(viewport.width * 1.4), 40 - Math.random() * 40, THREE.MathUtils.randFloatSpread(15) - 10],
           factor: 0.75 + Math.random() * 2,
           direction: Math.random() < 0.5 ? -1 : 1,
