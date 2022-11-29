@@ -9,13 +9,7 @@
        "question":"Do you have a dedicated office space at home?"
     },
     {
-       "question":"Show us your office space!"
-    },
-    {
        "question":"Where do you work most frequently from at home? Your office? Your kitchen table? The backyard? Your bed?"
-    },
-    {
-       "question":"Be honest, how often do you work from bed?"
     },
     {
        "question":"What did you eat for breakfast?"
@@ -144,9 +138,6 @@
        "question":"What’s the best piece of advice you’ve ever been given?"
     },
     {
-       "question":"When you die, what do you want to be remembered for?"
-    },
-    {
        "question":"What is your favorite item you’ve bought this year?"
     },
     {
@@ -154,9 +145,6 @@
     },
     {
        "question":"What is your absolute dream job?"
-    },
-    {
-       "question":"What would your talent be if you were Miss or Mister World?"
     },
     {
        "question":"What would the title of your autobiography be?"
@@ -202,9 +190,6 @@
     },
     {
        "question":"What would your superpower be and why?"
-    },
-    {
-       "question":"Which band / artist – dead or alive would play at your funeral?"
     },
     {
        "question":"As a child, what did you want to be when you grew up?"

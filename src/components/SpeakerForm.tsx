@@ -5,7 +5,7 @@ const ToDoForm = ({ addSpeaker }) => {
     const [ inputName, setInputName ] = useState('')
     const [ inputRole, setInputRole ] = useState('im')
     const [ formToggle, setFormToggle] = useState(false)
-    const [ formToggleSymbol, setFormToggleSymbol] = useState('+')
+    const [ formToggleSymbol, setFormToggleSymbol] = useState('Add Speaker')
 
     const handleNameChange = (e: any) => {
         setInputName(e.currentTarget.value)

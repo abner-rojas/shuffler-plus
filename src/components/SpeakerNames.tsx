@@ -22,10 +22,6 @@ const SpeakerNames = ({speakers, questions, showIceBreakers, quotes}) => {
     const [hideName, setHideName] = useState<Boolean>(false)
     const [finished, setFinished] = useState<Boolean>(false)
 
-    console.log("Speaker Roll", speakersRoll);
-    console.log("Current Speaker", currentSpeaker);
-    
-
     const previousSpeaker = () => {
         setHideName(true)
         currentSpeaker > 0 ? setTimeout(()=>{setCurrentSpeaker(currentSpeaker - 1)}, timeoutDelay) : null
@@ -36,6 +32,10 @@ const SpeakerNames = ({speakers, questions, showIceBreakers, quotes}) => {
         setHideName(true)
         currentSpeaker < speakersRoll.length - 1 ? setTimeout(()=>{setCurrentSpeaker(currentSpeaker + 1)}, timeoutDelay) : null
         currentSpeaker < speakersRoll.length - 1 ? setTimeout(()=>{setCurrentQuestion(questions[Math.floor(Math.random() * questions.length)].question)}, timeoutDelay) : null
+    }
+
+    const changeIceBreaker = () => {
+        setCurrentQuestion(questions[Math.floor(Math.random() * questions.length)].question)
     }
 
     const buildSpeakersList = () => {
@@ -67,7 +67,7 @@ const SpeakerNames = ({speakers, questions, showIceBreakers, quotes}) => {
             {!finished && <div className="window padding--inline-4 padding--block-4">
                 {speakersRoll.length > 0 ? <>
                     <h1 className={hideName ? "bigname margin--bottom-1 text-blur-out" : "bigname margin--bottom-1 text-focus-in"}>{speakersRoll[currentSpeaker].name}</h1>
-                    {showIceBreakers && <h5 className={hideName ? "ice-breaker text-blur-out" : "ice-breaker text-focus-in"}>{currentQuestion}</h5>}
+                    {showIceBreakers && <h5 className={hideName ? "ice-breaker text-blur-out" : "ice-breaker text-focus-in"}>{currentQuestion} <span className="pass" onClick={changeIceBreaker} data-cursor-color="rgba(0,0,0,0.3)">&raquo;</span></h5>}
                     </> : null}
                     <hr className="margin--block-2" />
                 {currentSpeaker < speakersRoll.length - 1 ? <>

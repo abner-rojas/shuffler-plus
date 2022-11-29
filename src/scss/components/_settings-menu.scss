@@ -4,7 +4,8 @@
     @extend .paragraph--1;
     min-width: 260px;
     background: var(--settings-menu-background-color);
-    border: var(--settings-menu-border);
+    border-left: var(--settings-menu-border);
+    border-bottom: var(--settings-menu-border);
     border-bottom-left-radius: 8px;
     box-shadow: var(--settings-menu-shadow);
     color: white;
@@ -12,7 +13,7 @@
     top: -400px;
     right: 0;
     z-index: 10;
-    transition: top 1s ease;
+    transition: all 1s ease;
 
     &.visible{
         top: 0;

@@ -173,7 +173,7 @@ function App() {
           <Speakers updateSpeakers={updateSpeakers} speakers={speakers} />
           <hr />
           <div className="padding--inline-2 padding--block-1 place-center">
-            <button onClick={handleStart}>Start</button>
+            <button onClick={handleStart} data-cursor-color="rgba(0,0,0,0.3)">Start</button>
           </div> 
         </div>
         {start && <SpeakerNames speakers={speakers} questions={questions} showIceBreakers={settings.showIceBreakers} quotes={quotes} />} 
