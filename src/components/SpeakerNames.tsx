@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react' 
+import Weather from './Weather'
 
 interface Speaker {
     id: number,
@@ -21,17 +22,23 @@ const SpeakerNames = ({speakers, questions, showIceBreakers, quotes}) => {
     const [imLeadArray, setImLeadArray] = useState([])
     const [hideName, setHideName] = useState<Boolean>(false)
     const [finished, setFinished] = useState<Boolean>(false)
+    const [location, setLocation] = useState<String>()
+    
+    console.log("Speakers Roll", speakersRoll);
+    
 
     const previousSpeaker = () => {
         setHideName(true)
         currentSpeaker > 0 ? setTimeout(()=>{setCurrentSpeaker(currentSpeaker - 1)}, timeoutDelay) : null
         currentSpeaker > 0 ? setTimeout(()=>{setCurrentQuestion(questions[Math.floor(Math.random() * questions.length)].question)}, timeoutDelay) : null
+        setLocation(speakersRoll[currentSpeaker].location)
     }
 
     const nextSpeaker = () => {
         setHideName(true)
         currentSpeaker < speakersRoll.length - 1 ? setTimeout(()=>{setCurrentSpeaker(currentSpeaker + 1)}, timeoutDelay) : null
         currentSpeaker < speakersRoll.length - 1 ? setTimeout(()=>{setCurrentQuestion(questions[Math.floor(Math.random() * questions.length)].question)}, timeoutDelay) : null
+        setLocation(speakersRoll[currentSpeaker].location)
     }
 
     const changeIceBreaker = () => {
@@ -47,16 +54,22 @@ const SpeakerNames = ({speakers, questions, showIceBreakers, quotes}) => {
         setDevsArray(shuffleArray(speakers.filter( s => s.role === 'dev' && s.here )))
         setDevLeadArray(shuffleArray(speakers.filter( s => s.role === 'devlead' && s.here )))
         setImLeadArray(shuffleArray(speakers.filter( s => s.role === 'imlead' && s.here )))
-        
     }, [])
 
     useEffect(()=>{
-        setSpeakersRoll(buildSpeakersList())    
+        setSpeakersRoll(buildSpeakersList()) 
     }, [imsArray, devsArray, imLeadArray, devLeadArray])
 
     useEffect(() => {
         setHideName(false)
     }, [currentSpeaker])
+
+    useEffect(() => {
+        if (speakersRoll.length > 0)
+        setLocation(speakersRoll[currentSpeaker].location)
+        console.log("location", location);
+        
+    }, [speakersRoll, currentSpeaker])
 
     const showInspirationalQuote = () => {
         setFinished(true)
@@ -66,6 +79,7 @@ const SpeakerNames = ({speakers, questions, showIceBreakers, quotes}) => {
         <div className="speaker-names padding--inline-4 padding--block-4 slide-in-blurred-bottom">
             {!finished && <div className="window padding--inline-4 padding--block-4">
                 {speakersRoll.length > 0 ? <>
+                    {location && <Weather city={location}/>}
                     <h1 className={hideName ? "bigname margin--bottom-1 text-blur-out" : "bigname margin--bottom-1 text-focus-in"}>{speakersRoll[currentSpeaker].name}</h1>
                     {showIceBreakers && <h5 className={hideName ? "ice-breaker text-blur-out" : "ice-breaker text-focus-in"}>{currentQuestion} <span className="pass" onClick={changeIceBreaker} data-cursor-color="rgba(0,0,0,0.3)">&raquo;</span></h5>}
                     </> : null}

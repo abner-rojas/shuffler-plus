@@ -3,126 +3,147 @@
       "id": 1,
       "name": "Julia Joachimowicz",
       "role": "im",
-      "here": true
+      "here": true,
+      "location": "Montreal, Canada"
     },
     {
       "id": 2,
       "name": "Emma Mallon",
       "role": "im",
-      "here": true
+      "here": true,
+      "location": "Toronto, Canada"
     },
     {
       "id": 3,
       "name": "Jen Grajkowski",
       "role": "im",
-      "here": true
+      "here": true,
+      "location": "Victoria, Canada"
     },
     {
       "id": 4,
       "name": "Jennifer Guo",
       "role": "im",
-      "here": true
+      "here": true,
+      "location": "Toronto, Canada"
     },
     {
       "id": 5,
       "name": "Luis Díaz",
       "role": "im",
-      "here": true
+      "here": true,
+      "location": "Toronto, Canada"
     },
     {
       "id": 6,
       "name": "Julianna Hindemith",
       "role": "im",
-      "here": true
+      "here": true,
+      "location": "Vancouver, British Columbia, Canada"
     },
     {
       "id": 7,
-      "name": "Eduardo Arrangóiz",
+      "name": "Eduardo Santos",
       "role": "im",
-      "here": true
+      "here": true,
+      "location": "Mexico City, Mexico"
     },
     {
       "id": 8,
       "name": "Abner Rojas",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Mississauga, Ontario, Canada"
     },
     {
       "id": 9,
       "name": "Augusto Pavía Rosas",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Toronto, Canada"
     },
     {
       "id": 10,
       "name": "Cesar Villegas",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "León, Guanajuato, Mexico"
     },
     {
       "id": 11,
       "name": "Michael Li",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Toronto, Canada"
     },
     {
       "id": 12,
       "name": "Jéssica Motta",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Pirapora, Minas Gerais, Brazil"
     },
     {
       "id": 13,
       "name": "Kathryn Robertson",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Hamilton, Ontario, Canada"
     },
     {
       "id": 14,
       "name": "Marcos Herrera",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Tecate, Mexico"
     },
     {
       "id": 15,
       "name": "Shaun Seeram",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Scarborough, Ontario, Canada"
     },
     {
       "id": 16,
       "name": "Enrique Lozano",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Monterrey, Mexico"
     },
     {
       "id": 17,
       "name": "Filip Swierczynski",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Hamilton, Ontario, Canada"
     },
     {
       "id": 18,
       "name": "João Dantas",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Curitiba, Paraná, Brazil"
     },
     {
       "id": 19,
       "name": "Robert Ling",
       "role": "dev",
-      "here": true
+      "here": true,
+      "location": "Hamilton, Ontario, Canada"
     },
     {
       "id": 20,
       "name": "Tyler Crone",
       "role": "devlead",
-      "here": true
+      "here": true,
+      "location": "Hamilton, Ontario, Canada"
     },
     {
       "id": 21,
       "name": "Kevin Frade",
       "role": "imlead",
-      "here": true
+      "here": true,
+      "location": "Toronto, Ontario, Canada"
     }
   ]

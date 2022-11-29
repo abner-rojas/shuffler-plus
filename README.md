@@ -10,6 +10,7 @@ Features:
 * Set up the **Roll Call** at the beginning
 * State is saved in LocalStorage for **Team Member selections** and **Settings**
 * On-deck feature shows next speaker, no more surprises!
+* Weather Widget showcases our team members various locales!
 * IM Team Lead goes first, then shuffled IM/IC group, then shuffled DEV/QA/CONTENT, then back to DEV Team Lead
 * **Blingy** floating diamonds backdrop
 * Theme switcher: Beach, Holidays, Space and Neon themes currently available
@@ -20,7 +21,7 @@ Features:
 ToDos:
 
 * Automatic **Birthday Theme** enabled on a team member's birthday
-* Weather app for each team member to showcase our diverse locales
+* <strike>Weather app for each team member to showcase our diverse locales</strike> DONE!
 * ...suggest more features!!
 
 
@@ -52,3 +53,9 @@ Use the following instuctions to install and run:
     $ npm run dev
     ```
 </details>
+
+### Weather Widget
+The Weather widget requires an API Key, FREE from --> https://weatherstack.com/
+
+Creat a .env.local file and and add this line:
+VITE_MAP_API_KEY={YOUR API KEY HERE}

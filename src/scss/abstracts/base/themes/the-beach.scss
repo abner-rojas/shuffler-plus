@@ -94,9 +94,15 @@
     --quote-stroke-width: 0;
     --quote-outline-color: unset;
 
-    --author-color: rgb(12, 44, 160);
+    --author-color: hsl(227, 86%, 34%);
     --author-text-shadow: 0px 1px 14px var(--global-shadow-color);
     --author-stroke-width: 0;
     --author-outline-color: unset;
+
+    //weather widget
+    --weather-stroke-width: 0;
+    --weather-outline-color: none;
+    --weather-color: hsl(0, 0%, 100%);
+    --weather-text-shadow: 0px 1px 14px var(--global-shadow-color);
 
 }
