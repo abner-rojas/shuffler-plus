@@ -41,7 +41,7 @@ function App() {
   const [speakers, setSpeakers] = useState<Array<Speaker>>([])
   const [start, setStart] = useState<Boolean>(false)
   const [questions, setQuestions] = useState<String>()
-  const [quotes, setQuotes] = useState<resString>()
+  const [quotes, setQuotes] = useState<String>()
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
@@ -52,12 +52,10 @@ function App() {
     
     if(localStorage.getItem('settings') === null){
       localStorage.setItem('settings', JSON.stringify(defaultSettings))
-
     } else {
-
       setSettings(JSON.parse(localStorage.getItem('settings')))
-      
     }
+
   }, [])
 
 
@@ -116,6 +114,7 @@ function App() {
     localStorage.removeItem('settings')
     getSpeakersFromJSON()
     setSettings(defaultSettings)
+    setStart(false)
   }
 
   //handle theme switch

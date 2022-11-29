@@ -31,7 +31,7 @@ const ToDoForm = ({ addSpeaker }) => {
 
     const toggleAddSpeakerForm = () => {
         setFormToggle(!formToggle)
-        setFormToggleSymbol(formToggle ? "+" : "Cancel")
+        setFormToggleSymbol(formToggle ? "Add Speaker" : "Cancel")
     }
 
     return (
