@@ -24,7 +24,8 @@
         li{
             @extend .settings-controls;
 
-            &.inline-form{
+            &.inline-form,
+            &.buttons{
                 display: inline-flex;
                 align-items: center;
                 gap: 10px;

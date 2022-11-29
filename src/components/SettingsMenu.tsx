@@ -60,7 +60,10 @@ export default function SettingsMenu({switchTheme, switchDiamonds, switchIceBrea
                         </div>
                     </div>
                     </li>
-                    <li><button onClick={handleResetSpeakers} data-cursor-color="rgba(0,0,0,0.3)">Reset</button></li>
+                    <li className="buttons">
+                        <button onClick={handleResetSpeakers} data-cursor-color="rgba(0,0,0,0.3)">Reset</button>
+                        <button onClick={showMenu} data-cursor-color="rgba(0,0,0,0.3)">Close</button>
+                    </li>
                 </ul>
             </div>
         </>
