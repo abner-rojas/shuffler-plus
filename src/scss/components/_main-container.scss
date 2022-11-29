@@ -1,6 +1,6 @@
 .main-container{
+    position: absolute;
     display: grid;
-    grid-auto-rows: max-content;
     place-items: center;
     width: 100vw;
     height: 100vh;
@@ -11,6 +11,8 @@
     left: 0;
 
     .headings{
+        position: fixed;
+        top: 0;
         h1, h2{
         transition: color 1s var(--animation-curve);
         transition-delay: 1s;

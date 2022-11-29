@@ -50,7 +50,7 @@ export default function SettingsMenu({switchTheme, switchDiamonds, switchIceBrea
                     <li className="toggle-form">
                      <div className="speaker-input-group">
                         <div className="toggle" data-cursor-color="rgba(0,0,0,0.3)">
-                        <input id="iceBreakerToggle" type="checkbox" onChange={handleIceBreakersToggle} defaultChecked={!settings.showIceBreakers} />
+                        <input id="iceBreakerToggle" type="checkbox" onChange={handleIceBreakersToggle} checked={!settings.showIceBreakers} />
                         <label htmlFor="iceBreakerToggle" className="toggle-item">
                             <div className="check"></div>
                         </label>
