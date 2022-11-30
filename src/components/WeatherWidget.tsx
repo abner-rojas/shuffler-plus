@@ -29,7 +29,8 @@ const WeatherWidget = ({city} : {city:string}) => {
     }, [city])
 
     return (
-        weather && <div className="weather">
+        <>
+        {weather && <div className="weather">
             <div className="location paragraph--2">
                 <div className="city">{location?.name}</div>
                 <div className="country">{location?.country}</div>
@@ -45,7 +46,8 @@ const WeatherWidget = ({city} : {city:string}) => {
                     {weather.weather_descriptions[0]}
                 </div>
             </div>
-        </div>
+        </div>}
+        </>
     )
 }
 

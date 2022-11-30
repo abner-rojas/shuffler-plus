@@ -9,13 +9,6 @@ import SpeakerNames from './components/SpeakerNames'
 import DiamondsBackground from './components/DiamondsBackground'
 import SettingsMenu from './components/SettingsMenu'
 
-interface Speaker {
-  id: number,
-  name: string,
-  role: string,
-  here: boolean
-}
-
 interface Settings {
   diamondCount: number,
   theme: string,
@@ -41,8 +34,8 @@ function App() {
   const [settings, setSettings] = useState<Settings>(defaultSettings)
   const [speakers, setSpeakers] = useState<Array<Speaker>>([])
   const [start, setStart] = useState<boolean>(false)
-  const [questions, setQuestions] = useState<Array<object>>([])
-  const [quotes, setQuotes] = useState<Array<object>>([])
+  const [questions, setQuestions] = useState<Array<Question>>([])
+  const [quotes, setQuotes] = useState<Array<Quote>>([])
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
