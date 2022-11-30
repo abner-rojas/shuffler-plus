@@ -18,7 +18,7 @@ const WeatherWidget = ({city} : {city:string}) => {
     const [location, setLocation] = useState<Location>()
     
     const getCurrentWeather = async () => {
-        const response = await fetch(`http://api.weatherstack.com/current?access_key=${import.meta.env.VITE_MAP_API_KEY}&query=${city}`)
+        const response = await fetch(`https://api.weatherstack.com/current?access_key=${import.meta.env.VITE_MAP_API_KEY}&query=${city}`)
         const result = await response.json()
         setWeather(result.current)
         setLocation(result.location)
