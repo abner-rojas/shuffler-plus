@@ -37,12 +37,12 @@ function App() {
   const timeElapsed = Date.now()
   const today = new Date(timeElapsed)
   const defaultSettings = {diamondCount: 10, theme: 'the-beach', showIceBreakers: true}
-  const [loading, setLoading] = useState<Boolean>(true)
+  const [loading, setLoading] = useState<boolean>(true)
   const [settings, setSettings] = useState<Settings>(defaultSettings)
   const [speakers, setSpeakers] = useState<Array<Speaker>>([])
-  const [start, setStart] = useState<Boolean>(false)
-  const [questions, setQuestions] = useState<String>()
-  const [quotes, setQuotes] = useState<String>()
+  const [start, setStart] = useState<boolean>(false)
+  const [questions, setQuestions] = useState<Array<object>>([])
+  const [quotes, setQuotes] = useState<Array<object>>([])
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
@@ -58,7 +58,6 @@ function App() {
     }
 
   }, [])
-
 
   const getSpeakersFromJSON = async () => {
     console.log("getSpeakersFromJSON");
