@@ -1,12 +1,5 @@
 import { useState, useEffect } from 'react'
 
-interface Speaker {
-    id: number,
-    name: string,
-    role: string,
-    here: boolean
-}
-
 interface Props {
     speaker: Speaker
     updateSpeaker: Function
@@ -14,7 +7,7 @@ interface Props {
 
 const SpeakerInput:React.FC<Props> = ({speaker, updateSpeaker}) => {
 
-    const [checked, setChecked] = useState<Boolean>(!speaker.here)
+    const [checked, setChecked] = useState<boolean>(!speaker.here)
 
     const handleToggle = (e:any) => {
         updateSpeaker(e.target.value, !e.target.checked) 
@@ -27,8 +20,8 @@ const SpeakerInput:React.FC<Props> = ({speaker, updateSpeaker}) => {
     return (
     <div className="speaker-input-group">
         <div className="toggle" data-cursor-color="rgba(0,0,0,0.3)">
-            <input id={speaker.id} type="checkbox" value={speaker.id} onChange={handleToggle} checked={checked} />
-            <label htmlFor={speaker.id} className="toggle-item">
+            <input id={`${speaker.id}`} type="checkbox" value={speaker.id} onChange={handleToggle} checked={checked} />
+            <label htmlFor={`${speaker.id}`} className="toggle-item">
                 <div className="check"></div>
             </label>
         </div>

@@ -1,35 +1,29 @@
 import { useEffect, useState } from 'react' 
 import WeatherWidget from './WeatherWidget'
 
-interface Speaker {
-    id: number,
-    name: string,
-    role: string,
-    here: boolean
-}
-
 interface Props{
     speakers: Array<Speaker>
-    questions: Array<Object>
+    questions: Array<Question>
     showIceBreakers: Boolean
-    quotes: Array<Object>
+    quotes: Array<Quote>
 }
-const shuffleArray = array => array.sort(() => 0.5 - Math.random());
+
+const shuffleArray = (array:Array<Speaker>) => array.sort(() => 0.5 - Math.random());
 
 const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, quotes}) => {
     
     const timeoutDelay = 1000
     const [currentSpeaker, setCurrentSpeaker] = useState(0)
     const [currentQuestion, setCurrentQuestion] = useState(questions[Math.floor(Math.random() * questions.length)].question)
-    const [quote, setQuote] = useState(quotes[Math.floor(Math.random() * quotes.length)])
-    const [speakersRoll, setSpeakersRoll] = useState([])
-    const [imsArray, setImsArray] = useState([])
-    const [devsArray, setDevsArray] = useState([])
-    const [devLeadArray, setDevLeadArray] = useState([])
-    const [imLeadArray, setImLeadArray] = useState([])
-    const [hideName, setHideName] = useState<Boolean>(false)
-    const [finished, setFinished] = useState<Boolean>(false)
-    const [location, setLocation] = useState<String>()
+    const [quote] = useState<Quote>(quotes[Math.floor(Math.random() * quotes.length)])
+    const [speakersRoll, setSpeakersRoll] = useState<Array<Speaker>>([])
+    const [imsArray, setImsArray] = useState<Array<Speaker>>([])
+    const [devsArray, setDevsArray] = useState<Array<Speaker>>([])
+    const [devLeadArray, setDevLeadArray] = useState<Array<Speaker>>([])
+    const [imLeadArray, setImLeadArray] = useState<Array<Speaker>>([])
+    const [hideName, setHideName] = useState<boolean>(false)
+    const [finished, setFinished] = useState<boolean>(false)
+    const [location, setLocation] = useState<string>()
 
     const previousSpeaker = () => {
         setHideName(true)
@@ -71,8 +65,6 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, quo
     useEffect(() => {
         if (speakersRoll.length > 0)
         setLocation(speakersRoll[currentSpeaker].location)
-        console.log("location", location);
-        
     }, [speakersRoll, currentSpeaker])
 
     const showInspirationalQuote = () => {

@@ -44,7 +44,7 @@ function Background({theme}: {theme:string}) {
 export default function DiamondsBackground({theme, diamondCount} : {theme:string, diamondCount:number}) {
 
   const[background, setBackground] = useState('beach')
-  const[count, setCount] = useState(diamondCount)
+  const[count, setCount] = useState<number>(diamondCount)
 
   useEffect(() => {
     // console.log('Diamonds background render');

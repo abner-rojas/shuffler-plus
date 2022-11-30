@@ -2,13 +2,6 @@ import { useEffect, useState, useRef } from 'react'
 import SpeakerInput from './SpeakerInput'
 import SpeakerForm from './SpeakerForm'
 
-interface Speaker {
-    id: number,
-    name: string,
-    role: string,
-    here: boolean
-}
-
 interface Props {
     updateSpeakers: Function
     speakers: Array<Speaker>
@@ -25,9 +18,10 @@ const Speakers:React.FC<Props> = ({updateSpeakers, speakers}) => {
         names.indexOf(name) === -1 ? updateSpeakers([...speakers, {id: highestID + 1, name: name, role: role, here: true}]) : null
     }
 
-    const updateSpeaker = (speakerId:number, checked:boolean) => {
+    const updateSpeaker = (speakerId:string, checked:boolean) => {
         //update speakers after toggle click
-        const updatedSpeakers = speakers.map( (speaker) => parseInt(speaker.id) === parseInt(speakerId) ? {...speaker, here: checked} : speaker )
+        
+        const updatedSpeakers = speakers.map( (speaker) => speaker.id === parseInt(speakerId) ? {...speaker, here: checked} : speaker )
         updateSpeakers(updatedSpeakers) 
     }
 

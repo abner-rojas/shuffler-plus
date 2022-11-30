@@ -1,14 +1,15 @@
 .logo{
-    width: 70px;
-    height: 70px;
     position: absolute;
     top: 20px;
     left: 20px;
-    border-radius: 50%;
     display: grid;
-    place-items: center;
+
     z-index: 11;
-    cursor: pointer;
+
+    .logo-button{
+        cursor: pointer;
+        place-items: center;
+    }
 
     svg{
         width: 70px;

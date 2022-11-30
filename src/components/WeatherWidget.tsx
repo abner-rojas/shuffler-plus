@@ -1,19 +1,21 @@
 import React, { useMemo, useState } from "react";
 
-// interface Weather{
-//     weather_icons: object | null
-//     weather_descriptions: object | null
-// }
+interface Weather{
+    weather_icons: Array<string>
+    weather_descriptions: Array<string>
+    temperature: string
+    description: string
+}
 
-// interface Location{
-//     name: string | null
-//     country: string | null;
-// }
+interface Location{
+    name: string
+    country: string
+}
 
 const WeatherWidget = ({city} : {city:string}) => {
 
-    const [weather, setWeather] = useState(null)
-    const [location, setLocation] = useState(null)
+    const [weather, setWeather] = useState<Weather>()
+    const [location, setLocation] = useState<Location>()
     
     const getCurrentWeather = async () => {
         const response = await fetch(`http://api.weatherstack.com/current?access_key=${import.meta.env.VITE_MAP_API_KEY}&query=${city}`)
@@ -29,8 +31,8 @@ const WeatherWidget = ({city} : {city:string}) => {
     return (
         weather && <div className="weather">
             <div className="location paragraph--2">
-                <div className="city">{location.name}</div>
-                <div className="country">{location.country}</div>
+                <div className="city">{location?.name}</div>
+                <div className="country">{location?.country}</div>
             </div>
             <div className="temperature">
                 {weather.temperature}&deg;C

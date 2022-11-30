@@ -1,11 +1,5 @@
 import { useState } from "react"
 
-interface Settings {
-    diamondCount: number,
-    theme: string | null,
-    showIceBreakers: boolean
-}
-
 interface Props {
     switchTheme: Function
     switchDiamonds: Function
@@ -23,7 +17,7 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, switchIceBre
     }
 
     const handleDiamonds = (e:any) => {
-        switchDiamonds(e.target.value)
+        switchDiamonds(parseInt(e.target.value))
     }
 
     const handleIceBreakersToggle = (e:any) => {
@@ -54,13 +48,13 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, switchIceBre
                     
                     <li>Theme
                         <ul>
-                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'the-beach' ? 'active' : null} data-theme="the-beach" data-cursor-color="rgba(0,0,0,0.3)">The Beach</span></li>
-                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'space' ? 'active' : null} data-theme="space" data-cursor-color="rgba(0,0,0,0.3)">Space</span></li>
-                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'holidays' ? 'active' : null} data-theme="holidays" data-cursor-color="rgba(0,0,0,0.3)">Holidays</span></li>
-                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'neon' ? 'active' : null} data-theme="neon" data-cursor-color="rgba(0,0,0,0.3)">Neon</span></li>
+                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'the-beach' ? 'active' : undefined} data-theme="the-beach" data-cursor-color="rgba(0,0,0,0.3)">The Beach</span></li>
+                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'space' ? 'active' : undefined} data-theme="space" data-cursor-color="rgba(0,0,0,0.3)">Space</span></li>
+                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'holidays' ? 'active' : undefined} data-theme="holidays" data-cursor-color="rgba(0,0,0,0.3)">Holidays</span></li>
+                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'neon' ? 'active' : undefined} data-theme="neon" data-cursor-color="rgba(0,0,0,0.3)">Neon</span></li>
                         </ul>
                     </li>
-                    <li className="inline-form">Diamonds <input type="number" min="0" max="44" value={settings.diamondCount} onChange={handleDiamonds}  data-cursor-exclusion/></li>
+                    <li className="inline-form">Diamonds <input type="number" min="0" max="44" value={settings.diamondCount} onChange={handleDiamonds} data-cursor-color="rgba(0,0,0,0.3)"/></li>
                     <li className="toggle-form">
                      <div className="speaker-input-group">
                         <div className="toggle" data-cursor-color="rgba(0,0,0,0.3)">

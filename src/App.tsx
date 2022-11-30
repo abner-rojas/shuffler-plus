@@ -125,10 +125,10 @@ function App() {
   }
 
   //handle theme switch
-  const switchDiamonds = (count:any) => {
+  const switchDiamonds = (count:number) => {
     localStorage.setItem('settings', JSON.stringify({...settings, diamondCount: count}))
     setSettings({...settings, diamondCount: count})
-    console.log("Switch Diamonds", settings)
+    console.log("Switch Diamonds", typeof(count))
   }
 
   //handle ice breakers switch

@@ -19,6 +19,10 @@
         top: 0;
     }
 
+    input[type="number"]{
+        cursor: pointer;
+    }
+
     ul{
         display: grid;
         gap: 20px;
