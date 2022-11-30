@@ -16,7 +16,7 @@ const SpeakerInput:React.FC<Props> = ({speaker, updateSpeaker}) => {
 
     const [checked, setChecked] = useState<Boolean>(!speaker.here)
 
-    const handleToggle = (e) => {
+    const handleToggle = (e:any) => {
         updateSpeaker(e.target.value, !e.target.checked) 
     }
 

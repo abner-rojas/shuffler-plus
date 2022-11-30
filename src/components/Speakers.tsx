@@ -9,7 +9,12 @@ interface Speaker {
     here: boolean
 }
 
-export default function Speakers({updateSpeakers, speakers}){
+interface Props {
+    updateSpeakers: Function
+    speakers: Array<Speaker>
+}
+
+const Speakers:React.FC<Props> = ({updateSpeakers, speakers}) => {
 
     const addSpeaker = (name: string, role: string) => {
         const ids = speakers.map((a) => a.id)
@@ -22,8 +27,8 @@ export default function Speakers({updateSpeakers, speakers}){
 
     const updateSpeaker = (speakerId:number, checked:boolean) => {
         //update speakers after toggle click
-        const updatedSpeakers = speakers.map( (speaker) => (parseInt(speaker.id) === parseInt(speakerId) ? {...speaker, here: checked} : speaker) )
-        updateSpeakers(updatedSpeakers)
+        const updatedSpeakers = speakers.map( (speaker) => parseInt(speaker.id) === parseInt(speakerId) ? {...speaker, here: checked} : speaker )
+        updateSpeakers(updatedSpeakers) 
     }
 
     return (<>
@@ -63,3 +68,5 @@ export default function Speakers({updateSpeakers, speakers}){
     </>)
 
 }
+
+export default Speakers

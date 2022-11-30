@@ -1,20 +1,28 @@
-import { useEffect, useState } from "react";
+import React, { useMemo, useState } from "react";
 
-export default function Weather({city}){
+// interface Weather{
+//     weather_icons: object | null
+//     weather_descriptions: object | null
+// }
 
-    const [weather, setWeather] = useState()
-    const [location, setLocation] = useState()
+// interface Location{
+//     name: string | null
+//     country: string | null;
+// }
+
+const WeatherWidget = ({city} : {city:string}) => {
+
+    const [weather, setWeather] = useState(null)
+    const [location, setLocation] = useState(null)
     
     const getCurrentWeather = async () => {
-        console.log("Get Current Weather", {city});
         const response = await fetch(`http://api.weatherstack.com/current?access_key=${import.meta.env.VITE_MAP_API_KEY}&query=${city}`)
         const result = await response.json()
-        console.log("Weather", result);
         setWeather(result.current)
         setLocation(result.location)
     }
 
-    useEffect(() => {
+    useMemo(() => {
         getCurrentWeather()
     }, [city])
 
@@ -39,3 +47,4 @@ export default function Weather({city}){
     )
 }
 
+export default WeatherWidget

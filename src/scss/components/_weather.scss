@@ -17,8 +17,11 @@
     .icon{
         display: grid;
         place-items: center;
-        border-radius: 8px;
-        overflow: hidden;
+
+        img{
+            border-radius: 8px;
+            max-width: 60px;
+        }
     }
 
     div:last-child{

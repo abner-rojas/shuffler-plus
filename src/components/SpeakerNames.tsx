@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react' 
-import Weather from './Weather'
+import WeatherWidget from './WeatherWidget'
 
 interface Speaker {
     id: number,
@@ -7,9 +7,16 @@ interface Speaker {
     role: string,
     here: boolean
 }
+
+interface Props{
+    speakers: Array<Speaker>
+    questions: Array<Object>
+    showIceBreakers: Boolean
+    quotes: Array<Object>
+}
 const shuffleArray = array => array.sort(() => 0.5 - Math.random());
 
-const SpeakerNames = ({speakers, questions, showIceBreakers, quotes}) => {
+const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, quotes}) => {
     
     const timeoutDelay = 1000
     const [currentSpeaker, setCurrentSpeaker] = useState(0)
@@ -23,9 +30,6 @@ const SpeakerNames = ({speakers, questions, showIceBreakers, quotes}) => {
     const [hideName, setHideName] = useState<Boolean>(false)
     const [finished, setFinished] = useState<Boolean>(false)
     const [location, setLocation] = useState<String>()
-    
-    console.log("Speakers Roll", speakersRoll);
-    
 
     const previousSpeaker = () => {
         setHideName(true)
@@ -79,7 +83,7 @@ const SpeakerNames = ({speakers, questions, showIceBreakers, quotes}) => {
         <div className="speaker-names padding--inline-4 padding--block-4 slide-in-blurred-bottom">
             {!finished && <div className="window padding--inline-4 padding--block-4">
                 {speakersRoll.length > 0 ? <>
-                    {location && <Weather city={location}/>}
+                    {location && <WeatherWidget city={location}/>}
                     <h1 className={hideName ? "bigname margin--bottom-1 text-blur-out" : "bigname margin--bottom-1 text-focus-in"}>{speakersRoll[currentSpeaker].name}</h1>
                     {showIceBreakers && <h5 className={hideName ? "ice-breaker text-blur-out" : "ice-breaker text-focus-in"}>{currentQuestion} <span className="pass" onClick={changeIceBreaker} data-cursor-color="rgba(0,0,0,0.3)">&raquo;</span></h5>}
                     </> : null}
