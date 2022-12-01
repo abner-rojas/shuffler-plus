@@ -12,8 +12,7 @@ Features:
 * Set up the **Roll Call** at the beginning
 * State is saved in LocalStorage for **Team Member selections** and **Settings**
 * On-deck feature shows next speaker, no more surprises!
-* Weather Widget sh
-owcases our team members various locales!
+* Weather Widget showcases our team members various locales!
 * Speaker order -- IM Team Lead goes first, then shuffled IM/IC group, then shuffled DEV/QA/CONTENT, then back to DEV Team Lead
 * **Blingy** floating diamonds backdrop
 * Theme switcher: Beach, Holidays, Space and Neon themes currently available
