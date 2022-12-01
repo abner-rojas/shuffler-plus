@@ -16,7 +16,7 @@
 @include generateFluidType('h1, .heading--1', 'var(--ff-heading)', 400, 3, 3.4, 7.2, 7.5);
 @include generateFluidType('h2, .heading--2', 'var(--ff-heading)', 400, 2, 2.4, 5.2, 5.5);
 @include generateFluidType('h3, .heading--3', 'var(--ff-heading)', 400, 1,1.4, 4.2, 4.5);
-@include generateFluidType('h4, .heading--4', 'var(--ff-heading)', 400, 1, 1.4, 4.2, 4.5);
+@include generateFluidType('h4, .heading--4', 'var(--ff-heading)', 400, 1, 1.4, 3.8, 3.8);
 @include generateFluidType('h5, .heading--5', 'var(--ff-heading)', 400, 2.2, 2.6, 3.2, 3.5);
 @include generateFluidType('h6, .heading--6', 'var(--ff-heading)', 400, 1.8, 2.2, 2.2, 2.5);
 
