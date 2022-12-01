@@ -48,7 +48,7 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, switchIceBre
                     
                     <li>Theme
                         <ul>
-                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'the-beach' ? 'active' : undefined} data-theme="the-beach" data-cursor-color="rgba(0,0,0,0.3)">The Beach</span></li>
+                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'beach' ? 'active' : undefined} data-theme="beach" data-cursor-color="rgba(0,0,0,0.3)">The Beach</span></li>
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'space' ? 'active' : undefined} data-theme="space" data-cursor-color="rgba(0,0,0,0.3)">Space</span></li>
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'holidays' ? 'active' : undefined} data-theme="holidays" data-cursor-color="rgba(0,0,0,0.3)">Holidays</span></li>
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'neon' ? 'active' : undefined} data-theme="neon" data-cursor-color="rgba(0,0,0,0.3)">Neon</span></li>
