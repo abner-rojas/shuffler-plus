@@ -25,7 +25,7 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, switchIceBre
     }
 
     const handleResetSpeakers = () => {
-        resetSpeakers();
+        resetSpeakers()
     }
 
     const showMenu = () => {

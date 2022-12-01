@@ -23,6 +23,8 @@ Features:
 ToDos:
 
 * Automatic **Birthday Theme** enabled on a team member's birthday
+* Custom theme for every speaker
+* Make it generic, ability to change squad name + other squad customizations
 * <strike>Weather app for each team member to showcase our diverse locales</strike> DONE!
 * ...suggest more features!!
 
