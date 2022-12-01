@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
 const ToDoForm = ({addSpeaker} : {addSpeaker:Function}) => {
 
@@ -20,13 +20,13 @@ const ToDoForm = ({addSpeaker} : {addSpeaker:Function}) => {
           .toLowerCase()
           .split(' ')
           .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-          .join(' ');
+          .join(' ')
       }
 
     const handleSubmit = (e: any) => {
-        e.preventDefault();
-        addSpeaker(toTitleCase(inputName), inputRole);
-        setInputName('');
+        e.preventDefault()
+        addSpeaker(toTitleCase(inputName), inputRole)
+        setInputName('')
     }
 
     const toggleAddSpeakerForm = () => {

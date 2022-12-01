@@ -20,7 +20,7 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, switchIceBre
         switchDiamonds(parseInt(e.target.value))
     }
 
-    const handleIceBreakersToggle = (e:any) => {
+    const handleIceBreakersToggle = () => {
         switchIceBreakers(!settings.showIceBreakers)
     }
 

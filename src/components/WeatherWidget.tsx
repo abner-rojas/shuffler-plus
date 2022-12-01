@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState } from 'react'
 
 interface Weather{
     weather_icons: Array<string>

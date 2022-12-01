@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import './scss/app.scss'
-import { Cursor } from 'react-creative-cursor';
-import 'react-creative-cursor/dist/styles.css';
+import { Cursor } from 'react-creative-cursor'
+import 'react-creative-cursor/dist/styles.css'
 import Loading from './components/Loading'
 import Logo from './components/Logo'
 import Speakers from './components/Speakers'
@@ -29,7 +29,7 @@ function App() {
 
   const timeElapsed = Date.now()
   const today = new Date(timeElapsed)
-  const defaultSettings = {diamondCount: 10, theme: 'the-beach', showIceBreakers: true}
+  const defaultSettings = {diamondCount: 10, theme: 'beach', showIceBreakers: true}
   const [loading, setLoading] = useState<boolean>(true)
   const [settings, setSettings] = useState<Settings>(defaultSettings)
   const [speakers, setSpeakers] = useState<Array<Speaker>>([])
@@ -53,8 +53,6 @@ function App() {
   }, [])
 
   const getSpeakersFromJSON = async () => {
-    console.log("getSpeakersFromJSON");
-    
     //get speakers from json file
     const response = await fetch('/team-members.json')
     const result: Array<Speaker> = await response.json()
