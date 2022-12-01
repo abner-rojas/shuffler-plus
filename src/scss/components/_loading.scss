@@ -17,19 +17,15 @@
             max-width: 144px;
         }
     }
-
-    img{
-        max-width: 44%;
-    }
-
+    
     &.disabled{
         pointer-events: none;
     }
 
     .logo{
-            --logo-fill-background-arrow: rgba(255, 255, 255, 0.5);
-    --logo-fill-foreground-arrow: hsl(0, 0%, 100%);
-    --logo-fill-plus: hsl(209, 98%, 47%);
-    --logo-transition-delay: .2s;
+        --logo-fill-background-arrow: rgba(255, 255, 255, 0.5);
+        --logo-fill-foreground-arrow: hsl(0, 0%, 100%);
+        --logo-fill-plus: hsl(209, 98%, 47%);
+        --logo-transition-delay: .2s;
     }
 }

@@ -4,6 +4,7 @@ import { Canvas} from '@react-three/fiber'
 import { useTexture } from '@react-three/drei'
 import { EffectComposer, Bloom, DepthOfField } from '@react-three/postprocessing'
 import Diamonds from './Diamonds'
+import useImagePreloader from '../hooks/useImagePreloader'
 import beach from '../assets/backgrounds/the-beach.jpg'
 import space from '../assets/backgrounds/space.jpg'
 import holidays from '../assets/backgrounds/holidays.jpg'
@@ -34,9 +35,10 @@ export default function DiamondsBackground({theme, diamondCount} : {theme:string
 
   const[background, setBackground] = useState('beach')
   const[count, setCount] = useState<number>(diamondCount)
+  const { imagesPreloaded } = useImagePreloader(Object.values(backgroundImage))
 
   useEffect(() => {
-    // console.log('Diamonds background render');
+    
     
   }, [])
 
