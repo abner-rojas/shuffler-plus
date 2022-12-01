@@ -12,19 +12,22 @@ Features:
 * Set up the **Roll Call** at the beginning
 * State is saved in LocalStorage for **Team Member selections** and **Settings**
 * On-deck feature shows next speaker, no more surprises!
-* Weather Widget showcases our team members various locales!
-* IM Team Lead goes first, then shuffled IM/IC group, then shuffled DEV/QA/CONTENT, then back to DEV Team Lead
+* Weather Widget sh
+owcases our team members various locales!
+* Speaker order -- IM Team Lead goes first, then shuffled IM/IC group, then shuffled DEV/QA/CONTENT, then back to DEV Team Lead
 * **Blingy** floating diamonds backdrop
 * Theme switcher: Beach, Holidays, Space and Neon themes currently available
-* Fluid typography
-* Ice breaker questions so team can get to know eachother better
-* Final inspirational quote
+* Fluid typography for various viewport widths
+* Fun random Ice breaker questions so team can get to know eachother better
+* Show random inspirational/funny quote on FINISH
 
 ToDos:
 
-* Automatic **Birthday Theme** enabled on a team member's birthday
-* Custom theme for every speaker
 * Make it generic, ability to change squad name + other squad customizations
+* Automatic **Birthday Theme** enabled on a team member's birthday
+* Default Light and Dark themes based on OS preference
+* Mobile tweaks for smaller devices
+* Custom theme for every speaker
 * <strike>Weather app for each team member to showcase our diverse locales</strike> DONE!
 * ...suggest more features!!
 
