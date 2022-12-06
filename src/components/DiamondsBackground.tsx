@@ -19,14 +19,15 @@ const backgroundImage:Record<string, string> = {
 
 function Background({theme}: {theme:string}) {
 
-  const texture = useTexture(backgroundImage[theme])
+  // const texture = useTexture(backgroundImage[theme])
+  const texture = useTexture(beach)
   texture.wrapS = THREE.RepeatWrapping
   texture.wrapT = THREE.RepeatWrapping
   texture.repeat.set(2, 2)
   return (
     <mesh rotation={[-0.7, 0, 0]} scale={50}>
       <sphereGeometry />
-      <meshBasicMaterial map={texture} depthTest={false} side={THREE.BackSide} />
+      <meshBasicMaterial color={"red"} map={texture} depthTest={false} side={THREE.BackSide} />
     </mesh>
   )
 }
