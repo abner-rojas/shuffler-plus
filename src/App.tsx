@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import './scss/app.scss'
 import { Cursor } from 'react-creative-cursor'
 import 'react-creative-cursor/dist/styles.css'
@@ -112,21 +112,18 @@ function App() {
   const switchTheme = (theme:any) => {
     localStorage.setItem('settings', JSON.stringify({...settings, theme: theme}))
     setSettings({...settings, theme: theme})
-    console.log("Switch Theme", settings)
   }
 
   //handle theme switch
   const switchDiamonds = (count:number) => {
     localStorage.setItem('settings', JSON.stringify({...settings, diamondCount: count}))
     setSettings({...settings, diamondCount: count})
-    console.log("Switch Diamonds", typeof(count))
   }
 
   //handle ice breakers switch
   const switchIceBreakers = (show:boolean) => {
     localStorage.setItem('settings', JSON.stringify({...settings, showIceBreakers: show}))
     setSettings({...settings, showIceBreakers: show})
-    console.log("Switch IceBreakers", settings)
   }
 
   const handleStart = () => {

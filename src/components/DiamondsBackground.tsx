@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { useEffect, useState } from 'react'
 import { Canvas} from '@react-three/fiber'
 import { useTexture } from '@react-three/drei'
-import { EffectComposer, Bloom, DepthOfField } from '@react-three/postprocessing'
+import { EffectComposer, Bloom, DepthOfField, SelectiveBloom } from '@react-three/postprocessing'
 import Diamonds from './Diamonds'
 import useImagePreloader from '../hooks/useImagePreloader'
 import beach from '../assets/backgrounds/the-beach.jpg'
@@ -59,7 +59,8 @@ export default function DiamondsBackground({theme, diamondCount} : {theme:string
       <Background theme={background} />
       <Diamonds count={count} />
       <EffectComposer>
-        <Bloom luminanceThreshold={0.8} intensity={10} levels={9} mipmapBlur />
+        {/* <Bloom luminanceThreshold={0.8} intensity={10} levels={9} mipmapBlur={true} /> */}
+        <SelectiveBloom />
         <DepthOfField target={[0, 0, -10]} focalLength={0.1} bokehScale={10} height={1000} />
       </EffectComposer>
     </Canvas>
