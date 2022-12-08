@@ -4,6 +4,7 @@ import { useMemo, useRef } from "react"
 import { useThree, useFrame } from "@react-three/fiber"
 import { useGLTF, MeshRefractionMaterial, CubeCamera } from "@react-three/drei"
 import diamondUrl from "../assets/dflat.glb?url"
+import { MeshBasicMaterial } from "three"
 
 export default function Diamonds({count}: {count: number}){
 
