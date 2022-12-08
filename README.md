@@ -1,6 +1,6 @@
 # ShufflerPLUS
 
-<img src="/src/assets/shuffler-icon.svg" align="center"
+<img src="/src/assets/shuffler-logo.svg" align="center"
      alt="ShufflerPLUS" width="300" height="300">
 
 For Online Version Visit --> https://shuffler-plus.vercel.app/
