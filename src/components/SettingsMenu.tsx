@@ -3,17 +3,22 @@ import { useState } from "react"
 interface Props {
     switchTheme: Function
     switchDiamonds: Function
+    showDiamonds: Function
     switchIceBreakers: Function 
     resetSpeakers: Function 
     settings: Settings
 }
 
-const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, switchIceBreakers, resetSpeakers, settings}) => {
+const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, showDiamonds, switchIceBreakers, resetSpeakers, settings}) => {
 
     const [visible, setVisible] = useState(false)
 
     const handleThemeSwitch = (e:any) => {
         switchTheme(e.target.dataset.theme)
+    }
+
+    const handleShowDiamondsToggle = (e:any) => {
+        showDiamonds(!settings.showDiamonds)
     }
 
     const handleDiamonds = (e:any) => {
@@ -54,7 +59,20 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, switchIceBre
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'neon' ? 'active' : undefined} data-theme="neon" data-cursor-color="rgba(0,0,0,0.3)">Neon</span></li>
                         </ul>
                     </li>
-                    <li className="inline-form">Diamonds <input type="number" min="0" max="44" value={settings.diamondCount} onChange={handleDiamonds} data-cursor-color="rgba(0,0,0,0.3)"/></li>
+                    <li className="toggle-form">
+                        <div className="speaker-input-group">
+                            <div className="toggle" data-cursor-color="rgba(0,0,0,0.3)">
+                            <input id="showDiamondToggle" type="checkbox" onChange={handleShowDiamondsToggle} checked={!settings.showDiamonds} />
+                            <label htmlFor="showDiamondToggle" className="toggle-item">
+                                <div className="check"></div>
+                            </label>
+                            </div>
+                            <div className="toggle-speaker-name" data-cursor-exclusion>
+                                <span>Show Diamonds</span>
+                            </div>
+                        </div>
+                    </li>
+                   {settings.showDiamonds && <li className="inline-form">Diamonds <input type="number" min="0" max="44" value={settings.diamondCount} onChange={handleDiamonds} data-cursor-color="rgba(0,0,0,0.3)"/></li>}
                     <li className="toggle-form">
                      <div className="speaker-input-group">
                         <div className="toggle" data-cursor-color="rgba(0,0,0,0.3)">

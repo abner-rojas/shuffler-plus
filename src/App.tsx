@@ -12,6 +12,7 @@ import SettingsMenu from './components/SettingsMenu'
 interface Settings {
   diamondCount: number,
   theme: string,
+  showDiamonds: boolean,
   showIceBreakers: boolean
 }
 
@@ -29,7 +30,7 @@ function App() {
 
   const timeElapsed = Date.now()
   const today = new Date(timeElapsed)
-  const defaultSettings = {diamondCount: 10, theme: 'beach', showIceBreakers: true}
+  const defaultSettings = {diamondCount: 10, theme: 'beach', showIceBreakers: true, showDiamonds: false}
   const [loading, setLoading] = useState<boolean>(true)
   const [settings, setSettings] = useState<Settings>(defaultSettings)
   const [speakers, setSpeakers] = useState<Array<Speaker>>([])
@@ -120,6 +121,12 @@ function App() {
     setSettings({...settings, diamondCount: count})
   }
 
+  //handle showDiamonds switch
+  const showDiamonds = (show:boolean) => {
+    localStorage.setItem('settings', JSON.stringify({...settings, showDiamonds: show}))
+    setSettings({...settings, showDiamonds: show})
+  }
+
   //handle ice breakers switch
   const switchIceBreakers = (show:boolean) => {
     localStorage.setItem('settings', JSON.stringify({...settings, showIceBreakers: show}))
@@ -137,9 +144,9 @@ function App() {
   return (
     <div className={`App theme-${settings.theme}`}>
       <Loading show={loading} />
-      <SettingsMenu switchTheme={switchTheme} switchDiamonds={switchDiamonds} switchIceBreakers={switchIceBreakers} resetSpeakers={resetSpeakers} settings={settings} />
-      <DiamondsBackground theme={settings.theme} diamondCount={settings.diamondCount} />
-      <div className="main-container padding--inline-2 padding--top-4 padding--bottom-2">
+      <SettingsMenu switchTheme={switchTheme} switchDiamonds={switchDiamonds} showDiamonds={showDiamonds} switchIceBreakers={switchIceBreakers} resetSpeakers={resetSpeakers} settings={settings} />
+      {settings.showDiamonds && <DiamondsBackground theme={settings.theme} diamondCount={settings.diamondCount} />}
+      <div className="main-container padding--inline-2 padding--top-4 padding--bottom-2" style={{ backdropFilter: settings.showDiamonds ? 'unset': 'blur(4px)'}}>
         <Logo goHome={goHome} />
         <div className={`headings margin--block-2 ${start ? 'slide-out-blurred-top' : 'slide-in-blurred-top' }`}>
           <h1 className="text-center" data-cursor-exclusion>Diamond Hands</h1>
