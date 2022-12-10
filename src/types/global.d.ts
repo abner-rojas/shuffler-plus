@@ -6,6 +6,7 @@ declare global{
         diamondCount: number
         theme: string
         showIceBreakers: boolean
+        showDiamonds: boolean
     }
     
     interface Speaker {
