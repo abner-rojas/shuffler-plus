@@ -22,8 +22,9 @@
         display: inline-flex;
         align-items: center;
         gap: 10px;
-        min-width: 70vw;
-        max-width: 70vw;
+        max-width: clamp(335px, 70vw, 70vw);
+        min-width: clamp(335px, 70vw, 70vw);
+        // max-width: clamp(80%, 80%, 80%);
         transition: all 1.2s var(--animation-curve);
         color: var(--ice-breaker-color);
         -webkit-text-stroke-width: var(--ice-breaker-stroke-width);
@@ -61,6 +62,7 @@
 
     .controls{
         display: inline-flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
 

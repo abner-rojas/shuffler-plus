@@ -1,6 +1,6 @@
 .speakers-setup{
   display: grid;
-  width: 70vw;
+  width: clamp(335px, 70vw, 1200px);
   color: var(--speaker-setup-text-color);
 
   h3{

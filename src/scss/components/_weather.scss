@@ -14,6 +14,12 @@
         font-size: 60%;
     }
 
+    .location,
+    .temperature,
+    .description{
+        text-shadow: var(--main-heading-text-shadow);
+    }
+
     .icon{
         display: grid;
         place-items: center;

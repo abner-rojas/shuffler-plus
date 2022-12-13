@@ -60,7 +60,6 @@ export default function DiamondsBackground({theme, diamondCount} : {theme:string
       <Diamonds count={count} />
       <EffectComposer>
         <Bloom luminanceThreshold={0.8} intensity={10} levels={9} mipmapBlur={true} />
-        {/* <SelectiveBloom /> */}
         <DepthOfField target={[0, 0, -10]} focalLength={0.1} bokehScale={10} height={1000} />
       </EffectComposer>
     </Canvas>

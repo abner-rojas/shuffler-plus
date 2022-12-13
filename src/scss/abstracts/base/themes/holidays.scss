@@ -3,9 +3,9 @@
     --global-shadow-color: rgba(255, 189, 46, 0.8);
 
     //logo
-    --logo-fill-background-arrow: rgba(255, 255, 255, 0.5);
-    --logo-fill-foreground-arrow: hsl(0, 63%, 54%);
-    --logo-fill-plus: hsl(113, 50%, 42%);
+    --logo-fill-background-arrow: rgb(10, 113, 53);
+    --logo-fill-foreground-arrow: hsl(0, 87%, 48%);
+    --logo-fill-plus: hsl(49, 89%, 47%);
     --logo-transition-delay: .2s;
 
     //settings menu
@@ -19,20 +19,20 @@
     --main-container-text-color: hsl(0, 0%, 100%);
 
     //hr theme
-    --hr-background-color: rgba(53, 53, 53, 0.4);
+    --hr-background-color: rgba(217, 28, 28, 0.4);
     --hr-height: 1px;
     --hr-transition-delay: .2s;
 
     //main headings
     --main-heading-color: hsl(0, 0%, 100%);
-    --main-heading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-heading-text-shadow: 0px 1px 14px rgba(10, 103, 53, 0.9);
     --main-subheading-stroke-width: 0;
     --main-subheading-outline-color: hsla(18, 97%, 51%, 0);
-    --main-subheading-color: hsla(104, 80%, 18%, 0.757);
+    --main-subheading-color: hsl(52, 79%, 49%);
     --main-subheading-date-stroke-width: 0;
     --main-subheading-date-outline-color: hsla(0, 0%, 71%, 0);
-    --main-subheading-date-color: hsl(39, 60%, 59%);
-    --main-subheading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-subheading-date-color: hsl(39, 89%, 50%);
+    --main-subheading-text-shadow: 0px 1px 14px rgba(10, 103, 53, 0.9);
     --main-heading-transition-delay: .2s;
     --main-subheading-transition-delay: .2s;
 
@@ -45,10 +45,10 @@
     --window-border-radius: 10px;
     --window-transition-delay: .2s;
     --window-decal-image: url('/holly.png');
-    --window-decal-width: 300px;
-    --window-decal-height: 400px;
-    --window-decal-top: -140px;
-    --window-decal-left: -120px;
+    --window-decal-width: clamp(50px, 20vw, 300px);
+    --window-decal-height: clamp(150px, 30vw, 400px);
+    --window-decal-top: clamp(-140px, -13vw, -40px);
+    --window-decal-left: clamp(-120px, -9vw, -20px);
 
     //speakers-setup
     --speakers-header-heading-color: hsl(0, 0%, 100%);

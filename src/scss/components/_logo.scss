@@ -1,7 +1,7 @@
 .logo{
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: clamp(5px, 3vw, 20px);
+    left: clamp(5px, 3vw, 20px);
     display: grid;
 
     z-index: 11;
@@ -12,8 +12,8 @@
     }
 
     svg{
-        width: 70px;
-        height: 70px;
+        width: clamp(40px, 5vw, 70px);
+        height: clamp(40px, 5vw, 70px);
         display: block;
     }
 

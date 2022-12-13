@@ -7,7 +7,7 @@
     // grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     column-gap: 50px;
     row-gap: 5px;
-    max-height: calc(100vh - 440px);
+    max-height: clamp(55vh, calc(100vh - 440px), 80vh);
     overflow-y: auto;
 
     ul{

@@ -45,10 +45,11 @@
     --window-border-radius: 10px;
     --window-transition-delay: .2s;
     --window-decal-image: url('/beach-umbrella.png');
-    --window-decal-width: 250px;
-    --window-decal-height: 250px;
-    --window-decal-top: -90px;
-    --window-decal-left: -90px;
+    --window-decal-width: clamp(100px, 20vw, 250px);
+    --window-decal-height: clamp(100px, 20vw, 250px);
+    --window-decal-top: clamp(-90px, -10vw, 0px);
+    --window-decal-left: clamp(-90px, -10vw, 0px);
+
 
     //speakers-setup
     --speakers-header-heading-color: hsl(202, 97%, 15%);
@@ -80,14 +81,23 @@
     --button-box-shadow: none;
 
     //speakers names
-    --bigname-color: hsl(202, 97%, 15%);
+    --bigname-color: hsl(36, 100%, 50%);
     --bigname-transition-delay: .7s;
+    --bigname-stroke-width: 2px;
+    --bigname-outline-color: hsl(0, 0%, 100%);
+    --bigname-text-shadow: 0px 4px 14px hsl(50, 100%, 50%);
 
-    --on-deck-color: hsl(204, 100%, 23%, 50%);
-    --on-deck-transition-delay: 1s;
-
-    --ice-breaker-color: hsl(18, 97%, 41%);
+    --ice-breaker-color: hsl(198, 56%, 23%);
     --ice-breaker-transition-delay: 1.3s;
+    --ice-breaker-stroke-width: 0;
+    --ice-breaker-outline-color: hsl(48, 95%, 37%);
+    --ice-breaker-text-shadow: 0px 0px 14px hsl(190, 70%, 43%);
+
+    --on-deck-color: hsl(202, 97%, 15%, 40%);
+    --on-deck-transition-delay: 1s;
+    --on-deck-stroke-width: none;
+    --on-deck-outline-color: none;
+    --on-deck-text-shadow: 0px 1px 14px var(--global-shadow-color);
 
     //quotes
     --quote-color: hsla(20, 82%, 2%, 0.684);
@@ -95,7 +105,7 @@
     --quote-stroke-width: 0;
     --quote-outline-color: unset;
 
-    --author-color: hsl(227, 86%, 34%);
+    --author-color: hsl(0, 0%, 100%);
     --author-text-shadow: 0px 1px 14px var(--global-shadow-color);
     --author-stroke-width: 0;
     --author-outline-color: unset;
