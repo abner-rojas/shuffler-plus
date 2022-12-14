@@ -1,0 +1,95 @@
+.fortune-button{
+    position: relative;
+    background: unset;
+    box-shadow: unset;
+    overflow: visible;
+    border: none;
+
+    &:hover{
+        background: unset;
+
+        svg{
+            .circle{
+                opacity: 1;
+            }
+
+            .path1{
+                opacity: 1;
+            }
+        }
+    }
+
+    svg{
+        width: clamp(50px, 5vw, 100px);
+        height: clamp(50px, 5vw, 100px);
+        enable-background:new 0 0 512 512;
+        .circle{
+            transition: all 1s var(--animation-curve);
+            fill:var(--fortune-cookie-background-color);
+            opacity: .8;
+        }
+
+        .shadow{
+            transition: all 1s var(--animation-curve);
+            fill: var(--fortune-cookie-shadow-color);
+            opacity: .8;
+        }
+
+        .cookie1{
+            fill:#FFD15D;
+        }
+
+        .cookie2{
+            fill:#F9B54C;
+        }
+
+        .tag{
+            fill:#E6F3FF;
+        }
+
+    }
+
+    .fortune{
+        position: absolute;
+        bottom: -10px;
+        left: 65%;
+        transform: translate(-50%, 100%);
+        background: var(--fortune-background-color);
+        color: var(--fortune-text-color);
+        border-radius: 20px;
+        padding: 40px;
+        width: 400px;
+        -webkit-text-stroke-width: 0;
+        text-shadow: none;
+        box-shadow: 10px 10px 10px var(--global-shadow-color);
+
+        .close{
+            display: block;
+            padding: 15px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: none;
+            font-family: var(--ff-body);
+            font-size: 22px;
+            border: none;
+            box-shadow: unset;
+            color: var(--fortune-close-button-color);
+        }
+    
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: 1.125em solid transparent;
+            border-bottom-color: var(--fortune-background-color);
+            border-top: 0;
+            border-left: 0;
+            margin-left: -0.562em;
+            margin-top: -1.125em;
+        }
+    }
+}

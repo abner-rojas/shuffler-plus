@@ -37,6 +37,7 @@ function App() {
   const [start, setStart] = useState<boolean>(false)
   const [questions, setQuestions] = useState<Array<Question>>([])
   const [quotes, setQuotes] = useState<Array<Quote>>([])
+  const [fortunes, setFortunes] = useState<Array>([])
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
@@ -71,6 +72,13 @@ function App() {
     setQuestions(result)
   }
 
+  const getFortunesFromJSON = async () => {
+    //get speakers from json file
+    const response = await fetch('/fortunes.json')
+    const result = await response.json()
+    setFortunes(result)
+  }
+
   const getQuotesFromJSON = async () => {
     //get speakers from json file
     const response = await fetch('/inspirational-quotes.json')
@@ -93,6 +101,10 @@ function App() {
 
   useEffect(() => {
     getQuotesFromJSON()
+  },[])
+
+  useEffect(() => {
+    getFortunesFromJSON()
   },[])
 
   const updateSpeakers = (updatedSpeakers: Array<Speaker>) => {
@@ -157,10 +169,10 @@ function App() {
           <Speakers updateSpeakers={updateSpeakers} speakers={speakers} />
           <hr />
           <div className="padding--inline-2 padding--block-1 place-center">
-            <button onClick={handleStart} data-cursor-color="rgba(0,0,0,0.3)">Start</button>
+            <button onClick={handleStart} data-cursor-color={"rgba(0,0,0,0.2)"} data-cursor-size={200}>Start</button>
           </div> 
         </div>
-        {start && <SpeakerNames speakers={speakers} questions={questions} showIceBreakers={settings.showIceBreakers} quotes={quotes} />} 
+        {start && <SpeakerNames speakers={speakers} questions={questions} showIceBreakers={settings.showIceBreakers} quotes={quotes} fortunes={fortunes} />} 
       </div>
       <Cursor isGelly={true} cursorBackgrounColor={"rgba(255,255,255,0.9"} cursorSize={44} />
     </div>
