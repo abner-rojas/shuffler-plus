@@ -87,8 +87,7 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, quo
             {!finished && <div className="window padding--inline-4 padding--block-4">
                 {speakersRoll.length > 0 ? <>
                     {location && <WeatherWidget city={location}/>}
-                    <h1 className={hideName ? "bigname margin--bottom-1 text-blur-out" : "bigname margin--bottom-1 text-focus-in"}>
-                        {speakersRoll[currentSpeaker].name}
+                    <div className="fortune-container">
                         <button onClick={handleFortuneButton} className="fortune-button" data-cursor-color={"rgba(0,0,0,0.44)"}>
                             <svg x="0px" y="0px" viewBox="0 0 512 512" xmlSpace="preserve">
                             <circle className='circle' cx="256" cy="256" r="256"/>
@@ -104,10 +103,13 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, quo
                                 c0-74.347-60.271-134.618-134.618-134.618v134.618H248.396z"/>
                             </svg>
                             {showFortune  && <div className="fortune paragraph--2 ">
-                                <span className="close" data-cursor-size={44} data-cursor-color={"rgba(0,0,0,0.44)"}>&#10005;</span>
-                                {fortune}
+                            <span className="close" data-cursor-size={44} data-cursor-color={"rgba(0,0,0,0.44)"}>&#10005;</span>
+                            {fortune}
                             </div>}
                         </button>
+                    </div>
+                    <h1 className={hideName ? "bigname margin--bottom-1 text-blur-out" : "bigname margin--bottom-1 text-focus-in"}>
+                        {speakersRoll[currentSpeaker].name}
                     </h1>
                     {showIceBreakers && <h5 className={hideName ? "ice-breaker text-blur-out" : "ice-breaker text-focus-in"} data-cursor-color={"rgba(0,0,0,0.2)"}>{currentQuestion} <button className="pass" onClick={changeIceBreaker}>&raquo;</button></h5>}
                     </> : null}

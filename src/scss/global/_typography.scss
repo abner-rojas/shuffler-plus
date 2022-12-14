@@ -24,8 +24,8 @@
 @include generateFluidType('.eyebrow--1', 'var(--ff-heading)', 400, 1.2, 1.2, 1.8, 1.8);
 @include generateFluidType('.button-text--1', 'var(--ff-heading)', 400, 4, 4, 4, 4);
 
-@include generateFluidType('.bigname', 'var(--ff-heading)', 400, 6, 6, 10, 10);
-@include generateFluidType(blockquote, 'var(--ff-heading)', 400, 4, 4, 7, 7);
+@include generateFluidType('.bigname', 'var(--ff-heading)', 400, 3, 3, 10, 10);
+@include generateFluidType(blockquote, 'var(--ff-heading)', 400, 2, 2, 7, 7);
 @include generateFluidType(figcaption, 'var(--ff-heading)', 400, 2, 2, 4, 4);
 @include generateFluidType('.settings-controls', 'var(--ff-body)', 400, 1, 1, 2, 2);
 @include generateFluidType('.paragraph--1', 'var(--ff-heading)', 400, 1, 1, 1.4, 1.4);

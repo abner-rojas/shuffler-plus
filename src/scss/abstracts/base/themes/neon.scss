@@ -122,9 +122,10 @@
     --weather-text-shadow: 0px 1px 14px var(--global-shadow-color);
 
     //fortune cookie
-    --fortune-background-color: hsl(224, 78%, 30%);
+    --fortune-background-color: hsl(224, 78%, 30%, 70%);
     --fortune-text-color: hsl(0, 0%, 100%);
     --fortune-close-button-color: hsl(0, 0%, 100%);
     --fortune-cookie-background-color: hsl(315, 100%, 50%);
     --fortune-cookie-shadow-color: hsl(315, 100%, 30%);
+    --fortune-cookie-dropshadow-color: rgba(11, 42, 77, 0.627);
 }

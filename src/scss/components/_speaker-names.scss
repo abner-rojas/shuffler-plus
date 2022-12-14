@@ -16,9 +16,6 @@
 
     .bigname{
         position: relative;
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
         transition: all 1s var(--animation-curve);
         color: var(--bigname-color);
         -webkit-text-stroke-width: var(--bigname-stroke-width);
