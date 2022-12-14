@@ -37,7 +37,7 @@ function App() {
   const [start, setStart] = useState<boolean>(false)
   const [questions, setQuestions] = useState<Array<Question>>([])
   const [quotes, setQuotes] = useState<Array<Quote>>([])
-  const [fortunes, setFortunes] = useState<Array>([])
+  const [fortunes, setFortunes] = useState<Array<string>>([])
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
