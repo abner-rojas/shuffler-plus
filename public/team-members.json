@@ -1,12 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Julia Joachimowicz",
-    "role": "im",
-    "here": true,
-    "location": "Montreal, Canada"
-  },
-  {
     "id": 3,
     "name": "Jen Grajkowski",
     "role": "im",
@@ -49,25 +42,11 @@
     "location": "León, Guanajuato, Mexico"
   },
   {
-    "id": 11,
-    "name": "Michael Li",
-    "role": "dev",
-    "here": true,
-    "location": "Toronto, Canada"
-  },
-  {
     "id": 12,
     "name": "Jéssica Motta",
     "role": "dev",
     "here": true,
     "location": "Pirapora, Minas Gerais, Brazil"
-  },
-  {
-    "id": 13,
-    "name": "Kathryn Robertson",
-    "role": "dev",
-    "here": true,
-    "location": "Hamilton, Ontario, Canada"
   },
   {
     "id": 14,
@@ -91,25 +70,11 @@
     "location": "Monterrey, Mexico"
   },
   {
-    "id": 17,
-    "name": "Filip Swierczynski",
-    "role": "dev",
-    "here": true,
-    "location": "Hamilton, Ontario, Canada"
-  },
-  {
     "id": 18,
     "name": "João Dantas",
     "role": "dev",
     "here": true,
     "location": "Curitiba, Paraná, Brazil"
-  },
-  {
-    "id": 19,
-    "name": "Robert Ling",
-    "role": "dev",
-    "here": true,
-    "location": "Hamilton, Ontario, Canada"
   },
   {
     "id": 20,
