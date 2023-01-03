@@ -30,7 +30,7 @@ function App() {
 
   const timeElapsed = Date.now()
   const today = new Date(timeElapsed)
-  const defaultSettings = {diamondCount: 10, theme: 'holidays', showIceBreakers: true, showDiamonds: false}
+  const defaultSettings = {diamondCount: 10, theme: 'beach', showIceBreakers: true, showDiamonds: false}
   const [loading, setLoading] = useState<boolean>(true)
   const [settings, setSettings] = useState<Settings>(defaultSettings)
   const [speakers, setSpeakers] = useState<Array<Speaker>>([])
