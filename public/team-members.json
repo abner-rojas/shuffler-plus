@@ -56,13 +56,6 @@
     "location": "Tecate, Mexico"
   },
   {
-    "id": 15,
-    "name": "Shaun Seeram",
-    "role": "dev",
-    "here": true,
-    "location": "Scarborough, Ontario, Canada"
-  },
-  {
     "id": 16,
     "name": "Enrique Lozano",
     "role": "dev",
