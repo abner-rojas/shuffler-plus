@@ -1,0 +1,117 @@
+.theme-valentine{
+    --app-background-image: url('/backgrounds/valentine.jpg');
+    --global-shadow-color: rgba(48, 1, 1, 0.527);
+
+    //logo
+    --logo-fill-background-arrow: rgb(235, 12, 12);
+    --logo-fill-foreground-arrow: hsl(0, 80%, 33%);
+    --logo-fill-plus: hsl(0, 0%, 100%);
+    --logo-transition-delay: .2s;
+
+    //settings menu
+    --settings-toggle-color: hsl(0, 0%, 100%);
+    --settings-menu-shadow: 0px 1px 14px var(--global-shadow-color);
+    --settings-menu-background-color: rgba(215, 27, 27, 0.802);
+    --settings-menu-transition-delay: .2s;
+
+    //main container
+    --main-container-background-color: unset;
+    --main-container-text-color: hsl(0, 0%, 100%);
+
+    //hr theme
+    --hr-background-color: rgba(199, 0, 0, 0.4);
+    --hr-height: 1px;
+    --hr-transition-delay: .2s;
+
+    //main headings
+    --main-heading-color: hsl(0, 0%, 100%);
+    --main-heading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-subheading-stroke-width: 0;
+    --main-subheading-outline-color: hsla(0, 97%, 51%, 0);
+    --main-subheading-color: rgba(201, 50, 43, 0.7);
+    --main-subheading-date-stroke-width: 0;
+    --main-subheading-date-outline-color: hsla(0, 0%, 71%, 0);
+    --main-subheading-date-color: hsl(0, 65%, 51%);
+    --main-subheading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-heading-transition-delay: .2s;
+    --main-subheading-transition-delay: .2s;
+
+    //window theme
+    --window-background-color-1: hsla(356, 100%, 26%, 0.4);
+    --window-background-color-2: hsla(0, 88%, 26%, 0.4);
+    --window-backdrop-filter: blur(4px);
+    --window-box-shadow: 0px 0px 40px 10px var(--global-shadow-color);
+    --window-border: none;
+    --window-border-radius: 10px;
+    --window-transition-delay: .2s;
+    --window-decal-image: url('/hearts.png');
+    --window-decal-width: 500px;
+    --window-decal-height: 681px;
+    --window-decal-top: -120px;
+    --window-decal-left: -140px;
+
+    //speakers-setup
+    --speakers-header-heading-color: hsl(0, 0%, 100%);
+    --speakers-header-heading-transition-delay: .4s;
+    --speakers-header-background: hsla(0, 100%, 28%, 0.4);
+    --speaker-setup-text-color: hsla(0, 0%, 100%, 0.9);
+    --speakers-header-transition-delay: .6s;
+
+    //toggle button theme
+    --toggle-label-background-color: hsla(0, 0%, 0%, 0.323);
+    --toggle-check-background-color: hsl(0, 72%, 39%);
+    --toggle-unchecked-background-color: rgb(255, 6, 6);
+    --toggle-icon-color: hsla(22, 8%, 86%);
+    --toggle-transition-delay: .7s;
+
+    //button theme
+    --button-bg: hsla(0, 0%, 0%, 0);
+    --button-bg-hover: hsl(350, 71%, 88%);
+    --button-border-color: hsl(354, 100%, 56%);
+    --button-border-color-hover: hsl(354, 100%, 66%);
+    --button-border-width: 1px;
+    --button-border-style: solid;
+    --button-border-radius: 10px;
+    --button-text-color: hsl(0, 0%, 100%);
+    --button-text-color-hover: hsl(0, 79%, 46%);
+    --button-text-decoration: none;
+    --button-text-decoration-hover: none;
+    --button-transition-delay: unset;
+    --button-box-shadow: 0px 0px 40px 10px var(--global-shadow-color);
+
+
+    //speakers names
+    --bigname-color: hsl(0, 0%, 100%);
+    --bigname-transition-delay: .7s;
+
+    --on-deck-color: hsl(312, 95%, 84%);
+    --on-deck-transition-delay: 1s;
+
+    --ice-breaker-color: hsla(326, 100%, 87%, 0.93);
+    --ice-breaker-transition-delay: 1.3s;
+    
+    //quotes
+    --quote-color: hsl(0, 0%, 100%);
+    --quote-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --quote-stroke-width: 0;
+    --quote-outline-color: unset;
+
+    --author-color: hsla(0, 0%, 100%, 0.735);
+    --author-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --author-stroke-width: 0;
+    --author-outline-color: unset;
+
+    //weather widget
+    --weather-stroke-width: 0;
+    --weather-outline-color: none;
+    --weather-color: hsl(0, 0%, 100%);
+    --weather-text-shadow: 0px 1px 14px var(--global-shadow-color);
+
+    //fortune cookie
+    --fortune-background-color: hsl(209, 61%, 21%, 70%);
+    --fortune-text-color: hsl(0, 0%, 100%);
+    --fortune-close-button-color: hsl(0, 0%, 100%);
+    --fortune-cookie-background-color: hsl(351, 100%, 35%);
+    --fortune-cookie-shadow-color: hsl(0, 100%, 15%);
+    --fortune-cookie-dropshadow-color: rgba(45, 11, 11, 0.6);
+}

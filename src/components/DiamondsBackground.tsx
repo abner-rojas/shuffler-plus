@@ -9,12 +9,14 @@ import beach from '../assets/backgrounds/the-beach.jpg'
 import space from '../assets/backgrounds/space.jpg'
 import holidays from '../assets/backgrounds/holidays.jpg'
 import neon from '../assets/backgrounds/neon.jpg'
+import valentine from '../assets/backgrounds/valentine.jpg'
 
 const backgroundImage:Record<string, string> = {
   beach,
   space,
   holidays,
-  neon
+  neon,
+  valentine
 }
 
 function Background({theme}: {theme:string}) {
