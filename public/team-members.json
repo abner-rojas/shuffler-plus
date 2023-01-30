@@ -56,13 +56,6 @@
     "location": "Tecate, Mexico"
   },
   {
-    "id": 16,
-    "name": "Enrique Lozano",
-    "role": "dev",
-    "here": true,
-    "location": "Monterrey, Mexico"
-  },
-  {
     "id": 18,
     "name": "João Dantas",
     "role": "dev",
