@@ -58,6 +58,7 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, showDiamonds
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'holidays' ? 'active' : undefined} data-theme="holidays" data-cursor-color="rgba(0,0,0,0.3)">Holidays</span></li>
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'neon' ? 'active' : undefined} data-theme="neon" data-cursor-color="rgba(0,0,0,0.3)">Neon</span></li>
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'valentine' ? 'active' : undefined} data-theme="valentine" data-cursor-color="rgba(0,0,0,0.3)">Valentine</span></li>
+                            <li><span onClick={handleThemeSwitch} className={settings.theme == 'carnival' ? 'active' : undefined} data-theme="carnival" data-cursor-color="rgba(0,0,0,0.3)">Carnival</span></li>
                         </ul>
                     </li>
                     <li className="toggle-form">
