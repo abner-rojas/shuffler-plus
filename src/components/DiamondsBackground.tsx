@@ -11,6 +11,7 @@ import holidays from '../assets/backgrounds/holidays.jpg'
 import neon from '../assets/backgrounds/neon.jpg'
 import valentine from '../assets/backgrounds/valentine.jpg'
 import carnival from '../assets/backgrounds/carnival.jpg'
+import stpatrick from '../assets/backgrounds/stpatricks.jpg'
 
 const backgroundImage:Record<string, string> = {
   beach,
@@ -18,7 +19,8 @@ const backgroundImage:Record<string, string> = {
   holidays,
   neon,
   valentine,
-  carnival
+  carnival,
+  stpatrick
 }
 
 function Background({theme}: {theme:string}) {

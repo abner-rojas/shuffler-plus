@@ -1,0 +1,118 @@
+.theme-stpatrick
+{
+    --app-background-image: url('/backgrounds/stpatricks.jpg');
+    --global-shadow-color: rgba(48, 1, 1, 0.527);
+
+    //logo
+    --logo-fill-background-arrow: #009739;
+    --logo-fill-foreground-arrow: hsl(126, 97%, 14%);
+    --logo-fill-plus: hsl(29, 100%, 50%);
+    --logo-transition-delay: .2s;
+
+    //settings menu
+    --settings-toggle-color: hsl(26, 100%, 50%);
+    --settings-menu-shadow: 0px 1px 14px var(--global-shadow-color);
+    --settings-menu-background-color: #00973acb;
+    --settings-menu-transition-delay: .2s;
+
+    //main container
+    --main-container-background-color: unset;
+    --main-container-text-color: hwb(0 100% 0%);
+
+    //hr theme
+    --hr-background-color: hsl(107, 100%, 27%);
+    --hr-height: 1px;
+    --hr-transition-delay: .2s;
+
+    //main headings
+    --main-heading-color: hsl(0, 0%, 100%);
+    --main-heading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-subheading-stroke-width: 0;
+    --main-subheading-outline-color: hsla(0, 97%, 51%, 0);
+    --main-subheading-color: #009739;
+    --main-subheading-date-stroke-width: 2px;
+    --main-subheading-date-outline-color: hsl(127, 100%, 24%);
+    --main-subheading-date-color: hsla(52, 100%, 48%, 0);
+    --main-subheading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-heading-transition-delay: .2s;
+    --main-subheading-transition-delay: .2s;
+
+    //window theme
+    --window-background-color-1: hsla(142, 100%, 26%, 0.863);
+    --window-background-color-2: hsla(123, 100%, 48%, 0.371);
+    --window-backdrop-filter: blur(4px);
+    --window-box-shadow: 0px 0px 40px 10px var(--global-shadow-color);
+    --window-border: 4px solid #009739;
+    --window-border-radius: 10px;
+    --window-transition-delay: .2s;
+    --window-decal-image: url('/shamrock.png');
+    --window-decal-width: 300px;
+    --window-decal-height: 300px;
+    --window-decal-top: -200px;
+    --window-decal-left: -200px;
+
+    //speakers-setup
+    --speakers-header-heading-color: hsl(0, 0%, 100%);
+    --speakers-header-heading-transition-delay: .4s;
+    --speakers-header-background: #00973ad1;
+    --speaker-setup-text-color: hsla(0, 0%, 100%, 0.9);
+    --speakers-header-transition-delay: .6s;
+
+    //toggle button theme
+    --toggle-label-background-color: #ffffff60;
+    --toggle-check-background-color: #009739;
+    --toggle-unchecked-background-color: #ff7b00;
+    --toggle-icon-color: hsla(22, 8%, 86%);
+    --toggle-transition-delay: .7s;
+
+    //button theme
+    --button-bg: #097200;
+    --button-bg-hover: hsl(29, 100%, 50%);
+    --button-border-color: #009739;
+    --button-border-color-hover: #009739;
+    --button-border-width:4px;
+    --button-border-style: solid;
+    --button-border-radius: 50px;
+    --button-text-color: hsl(0, 0%, 100%);
+    --button-text-color-hover: #002672
+    --button-text-decoration: none;
+    --button-text-decoration-hover: none;
+    --button-transition-delay: unset;
+    --button-box-shadow: 0px 0px 40px 10px var(--global-shadow-color);
+
+
+    //speakers names
+    --bigname-color: #ffffff;
+    --bigname-transition-delay: .7s;
+
+    --on-deck-color: #ffffff76;
+    --on-deck-transition-delay: 1s;
+
+    --ice-breaker-color: #ffaa00;
+    --ice-breaker-transition-delay: 1.3s;
+    
+    //quotes
+    --quote-color: #ffffff;
+    --quote-text-shadow: 1px 2px 2px var(--global-shadow-color);
+    --quote-stroke-width: 0;
+    --quote-outline-color: unset;
+
+    --author-color: #ffffff;
+    --author-text-shadow: none;
+    --author-stroke-width: 0;
+    --author-outline-color: unset;
+
+    //weather widget
+    --weather-stroke-width: 0;
+    --weather-outline-color: none;
+    --weather-color: hsl(0, 0%, 100%);
+    --weather-text-shadow: 0px 1px 14px var(--global-shadow-color);
+
+    //fortune cookie
+    --fortune-background-color: #095000;
+    --fortune-text-color: hsl(0, 0%, 100%);
+    --fortune-close-button-color: hsla(0, 0%, 100%, 0.324);
+    --fortune-cookie-background-color: #00531c;
+    --fortune-cookie-shadow-color: #0a3001;
+    --fortune-cookie-dropshadow-color: #007200;
+}
