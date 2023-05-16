@@ -24,14 +24,14 @@
     --hr-transition-delay: .2s;
 
     //main headings
-    --main-heading-color: hsl(46, 72%, 58%);
+    --main-heading-color: hsl(39, 100%, 60%);
     --main-heading-text-shadow: 0px 1px 14px var(--global-shadow-color);
-    --main-subheading-stroke-width: 2px;
-    --main-subheading-outline-color: hsl(18, 97%, 51%);
-    --main-subheading-color: hsl(22, 8%, 85%, 70%);
-    --main-subheading-date-stroke-width: 2px;
+    --main-subheading-stroke-width: 0;
+    --main-subheading-outline-color: hsl(18, 97%, 51%, 0);
+    --main-subheading-color: hsl(0, 0%, 100%);
+    --main-subheading-date-stroke-width: 0;
     --main-subheading-date-outline-color: hsl(22, 8%, 85%);
-    --main-subheading-date-color: hsl(18, 97%, 51%,  60%);
+    --main-subheading-date-color: hsl(31, 100%, 83%);
     --main-subheading-text-shadow: 0px 1px 14px var(--global-shadow-color);
     --main-heading-transition-delay: .2s;
     --main-subheading-transition-delay: .2s;

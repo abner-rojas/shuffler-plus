@@ -1,0 +1,148 @@
+[
+  {
+  "squad":"Diamond Hands",
+  "team":
+  [
+    {
+      "id": 3,
+      "name": "Jen Grajkowski",
+      "role": "im",
+      "here": true,
+      "location": "Victoria, Canada"
+    },
+    {
+      "id": 5,
+      "name": "Luis Díaz",
+      "role": "im",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 6,
+      "name": "Julianna Hindemith",
+      "role": "im",
+      "here": true,
+      "location": "Vancouver, British Columbia, Canada"
+    },
+    {
+      "id": 8,
+      "name": "Abner Rojas",
+      "role": "dev",
+      "here": true,
+      "location": "Mississauga, Ontario, Canada"
+    },
+    {
+      "id": 9,
+      "name": "Augusto Pavía Rosas",
+      "role": "dev",
+      "here": true,
+      "location": "Merida, Yucatan"
+    },
+    {
+      "id": 10,
+      "name": "Cesar Villegas",
+      "role": "dev",
+      "here": true,
+      "location": "León, Guanajuato, Mexico"
+    },
+    {
+      "id": 12,
+      "name": "Jéssica Motta",
+      "role": "dev",
+      "here": true,
+      "location": "Pirapora, Minas Gerais, Brazil"
+    },
+    {
+      "id": 14,
+      "name": "Marcos Herrera",
+      "role": "dev",
+      "here": true,
+      "location": "Tecate, Mexico"
+    },
+    {
+      "id": 18,
+      "name": "João Dantas",
+      "role": "dev",
+      "here": true,
+      "location": "Curitiba, Paraná, Brazil"
+    },
+    {
+      "id": 20,
+      "name": "Tyler Crone",
+      "role": "devlead",
+      "here": true,
+      "location": "Hamilton, Ontario, Canada"
+    },
+    {
+      "id": 21,
+      "name": "Salena Fox",
+      "role": "imlead",
+      "here": true,
+      "location": "Brantford, Canada"
+    },
+    {
+      "id": 22,
+      "name": "João Ferraz",
+      "role": "dev",
+      "here": true,
+      "location": "Florianópolis, Brazil"
+    }, 
+    {
+      "id": 23,
+      "name": "Yannick Manzano",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    }, 
+    {
+      "id": 24,
+      "name": "Alexandra Higuera",
+      "role": "im",
+      "here": true,
+      "location": "Toronto, Ontario"
+    }, 
+    {
+      "id": 25,
+      "name": "Daniel Gonzalez",
+      "role": "im",
+      "here": true,
+      "location": "Toronto, Ontario"
+    }, 
+    {
+      "id": 26,
+      "name": "Bianca Bernardi",
+      "role": "im",
+      "here": true,
+      "location": "Dundas, Canada"
+    }, 
+    {
+      "id": 27,
+      "name": "Evelyn Villalta",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    }, 
+    {
+      "id": 28,
+      "name": "Omar Torres",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 29,
+      "name": "Eduardo Santos",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 30,
+      "name": "Berty Pérez Escobedo",
+      "role": "dev",
+      "here": true,
+      "location": "Merida, Yucatan"
+    }
+  ]
+  }
+]

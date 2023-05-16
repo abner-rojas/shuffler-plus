@@ -38,6 +38,7 @@ function App() {
   const [questions, setQuestions] = useState<Array<Question>>([])
   const [quotes, setQuotes] = useState<Array<Quote>>([])
   const [fortunes, setFortunes] = useState<Array<string>>([])
+  const [squadName, setSquadName] = useState<string>('Squad B')
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
@@ -55,12 +56,15 @@ function App() {
   }, [])
 
   const getSpeakersFromJSON = async () => {
-    //get speakers from json file
-    const response = await fetch('/team-members.json')
-    const result: Array<Speaker> = await response.json()
+    //get speakers from json files
+    const response = await fetch('/settings-squad-b.json')
+    const json = await response.json()
+
+    console.log("json", json[0].team)
+    setSquadName(json.squad)
   
     //sort by role and alphabetize
-    const sortedSpeakers: Array<Speaker> = sortSpeakers(result)
+    const sortedSpeakers: Array<Speaker> = sortSpeakers(json[0].team)
     localStorage.setItem('speakers', JSON.stringify(sortedSpeakers))
     setSpeakers(sortedSpeakers)
   }
@@ -161,7 +165,7 @@ function App() {
       <div className="main-container padding--inline-2 padding--top-4 padding--bottom-2" style={{ backdropFilter: settings.showDiamonds ? 'unset': 'blur(4px)'}}>
         <Logo goHome={goHome} />
         <div className={`headings margin--block-2 ${start ? 'slide-out-blurred-top' : 'slide-in-blurred-top' }`}>
-          <h1 className="text-center" data-cursor-exclusion>Diamond Hands</h1>
+          <h1 className="text-center" data-cursor-exclusion>{squadName}</h1>
           <h2 className="text-center text-outline margin--bottom-4" data-cursor-exclusion>Stand-up <span className="date">{`${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`}</span></h2>
         </div>
 
