@@ -30,16 +30,11 @@ const Speakers:React.FC<Props> = ({updateSpeakers, speakers}) => {
       <div className="speaker-lists padding--inline-1 padding--block-2">
         <div>
             <ul className="margin--bottom-2">
-                {speakers.map( speaker => speaker.role === 'devlead' ? (
+                {speakers.map( speaker => speaker.role === 'lead' ? (
                     <li key={speaker.id}>
                     <SpeakerInput speaker={speaker} updateSpeaker={updateSpeaker} />
                     </li>
                 ) : null)}
-                {speakers.map( speaker => speaker.role === 'imlead' ? (
-                <li key={speaker.id}>
-                <SpeakerInput speaker={speaker} updateSpeaker={updateSpeaker} />
-                </li>
-            ) : null)}
             </ul>
             <ul>
             {speakers.map( speaker => speaker.role === 'im' ? (

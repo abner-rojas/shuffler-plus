@@ -21,8 +21,7 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, quo
     const [speakersRoll, setSpeakersRoll] = useState<Array<Speaker>>([])
     const [imsArray, setImsArray] = useState<Array<Speaker>>([])
     const [devsArray, setDevsArray] = useState<Array<Speaker>>([])
-    const [devLeadArray, setDevLeadArray] = useState<Array<Speaker>>([])
-    const [imLeadArray, setImLeadArray] = useState<Array<Speaker>>([])
+    const [leadArray, setLeadArray] = useState<Array<Speaker>>([])
     const [hideName, setHideName] = useState<boolean>(false)
     const [finished, setFinished] = useState<boolean>(false)
     const [location, setLocation] = useState<string>()
@@ -51,19 +50,18 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, quo
     }
 
     const buildSpeakersList = () => {
-        return [...imLeadArray, ...imsArray, ...devsArray, ...devLeadArray]
+        return [...leadArray, ...imsArray, ...devsArray]
     }
 
     useEffect(() => {
         setImsArray(shuffleArray(speakers.filter( s => s.role === 'im' && s.here )))
         setDevsArray(shuffleArray(speakers.filter( s => s.role === 'dev' && s.here )))
-        setDevLeadArray(shuffleArray(speakers.filter( s => s.role === 'devlead' && s.here )))
-        setImLeadArray(shuffleArray(speakers.filter( s => s.role === 'imlead' && s.here )))
+        setLeadArray(shuffleArray(speakers.filter( s => s.role === 'lead' && s.here )))
     }, [])
 
     useEffect(()=>{
         setSpeakersRoll(buildSpeakersList()) 
-    }, [imsArray, devsArray, imLeadArray, devLeadArray])
+    }, [imsArray, devsArray, leadArray])
 
     useEffect(() => {
         setHideName(false)

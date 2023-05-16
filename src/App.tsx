@@ -60,7 +60,6 @@ function App() {
     const response = await fetch('/settings-squad-b.json')
     const json = await response.json()
 
-    console.log("json", json[0].team)
     setSquadName(json.squad)
   
     //sort by role and alphabetize
