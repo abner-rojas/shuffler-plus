@@ -69,14 +69,14 @@
     {
       "id": 20,
       "name": "Tyler Crone",
-      "role": "devlead",
+      "role": "lead",
       "here": true,
       "location": "Hamilton, Ontario, Canada"
     },
     {
       "id": 21,
       "name": "Salena Fox",
-      "role": "imlead",
+      "role": "lead",
       "here": true,
       "location": "Brantford, Canada"
     },

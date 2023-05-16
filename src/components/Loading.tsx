@@ -1,4 +1,4 @@
-import loadingDiamond from '../assets/loading-diamond.gif'
+import loadingDiamond from '../assets/b.gif'
 import q4Logo from '../assets/q4.svg'
 
 export default function Loading({show} : {show:boolean}){
