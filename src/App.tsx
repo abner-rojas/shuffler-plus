@@ -59,7 +59,6 @@ function App() {
 
   const getConfigFromJSON = async () => {
     //get speakers from json files
-    console.log('file', `/settings-${settings.config}.json`)
     const response = await fetch(`/settings-${settings.config}.json`)
     const json = await response.json()
     
@@ -70,8 +69,6 @@ function App() {
     const sortedSpeakers: Array<Speaker> = sortSpeakers(json[0].team)
     localStorage.setItem('speakers', JSON.stringify(sortedSpeakers))
     setSpeakers(sortedSpeakers)
-
-    console.log('sordteSpeakers', sortedSpeakers)
   }
 
   const getQuestionsFromJSON = async () => {

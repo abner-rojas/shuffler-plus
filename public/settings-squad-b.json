@@ -142,7 +142,15 @@
       "role": "dev",
       "here": true,
       "location": "Merida, Yucatan"
+    },
+    {
+      "id": 31,
+      "name": "Juan Varguez",
+      "role": "dev",
+      "here": true,
+      "location": "Merida, Yucatan"
     }
+    
   ]
   }
 ]
