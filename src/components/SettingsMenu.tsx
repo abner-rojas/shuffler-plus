@@ -1,15 +1,17 @@
 import { useState } from "react"
 
 interface Props {
+    switchSquad: Function
     switchTheme: Function
     switchDiamonds: Function
     showDiamonds: Function
     switchIceBreakers: Function 
+    showFortuneCookie: Function 
     resetSpeakers: Function 
     settings: Settings
 }
 
-const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, showDiamonds, switchIceBreakers, resetSpeakers, settings}) => {
+const SettingsMenu:React.FC<Props> = ({switchSquad, switchTheme, switchDiamonds, showDiamonds, switchIceBreakers, showFortuneCookie, resetSpeakers, settings}) => {
 
     const [visible, setVisible] = useState(false)
 
@@ -27,6 +29,14 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, showDiamonds
 
     const handleIceBreakersToggle = () => {
         switchIceBreakers(!settings.showIceBreakers)
+    }
+
+    const handleFortuneCookieToggle = () => {
+        showFortuneCookie(!settings.showFortuneCookie)
+    }
+
+    const handleSquadSwitch = (e:any) => {
+        switchSquad(e.target.dataset.config)
     }
 
     const handleResetSpeakers = () => {
@@ -48,10 +58,15 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, showDiamonds
                 </button>
             </div>
             <div className={visible ? 'visible settings-menu padding--block-2 padding--inline-2' : 'settings-menu padding--block-2 padding--inline-2'}>
-                <h5 className="margin--bottom-1">Settings</h5>
-                <ul className="paragraph-1 form">
-                    
-                    <li>Theme
+                <h5 className="margin--bottom-3">Settings</h5>
+                <ul className="paragraph-1 form padding--inline-2">
+                    <li><div className="toggle-speaker-name">Squad</div>
+                        <ul>
+                            <li><span onClick={handleSquadSwitch} className={settings.config == 'squad-b' ? 'active' : undefined} data-config="squad-b" data-cursor-color="rgba(0,0,0,0.3)">Squad B</span></li>
+                            <li><span onClick={handleSquadSwitch} className={settings.config == 'renee' ? 'active' : undefined} data-config="renee" data-cursor-color="rgba(0,0,0,0.3)">Content Team</span></li>
+                        </ul>
+                    </li>
+                    <li className="margin--bottom-1"><div className="toggle-speaker-name">Theme</div>
                         <ul>
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'beach' ? 'active' : undefined} data-theme="beach" data-cursor-color="rgba(0,0,0,0.3)">The Beach</span></li>
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'space' ? 'active' : undefined} data-theme="space" data-cursor-color="rgba(0,0,0,0.3)">Space</span></li>
@@ -61,6 +76,32 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, showDiamonds
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'carnival' ? 'active' : undefined} data-theme="carnival" data-cursor-color="rgba(0,0,0,0.3)">Carnival</span></li>
                             <li><span onClick={handleThemeSwitch} className={settings.theme == 'stpatrick' ? 'active' : undefined} data-theme="stpatrick" data-cursor-color="rgba(0,0,0,0.3)">St. Patrick's Day</span></li>
                         </ul>
+                    </li>
+                    <li className="toggle-form">
+                     <div className="speaker-input-group">
+                        <div className="toggle" data-cursor-color="rgba(0,0,0,0.3)">
+                        <input id="iceBreakerToggle" type="checkbox" onChange={handleIceBreakersToggle} checked={!settings.showIceBreakers} />
+                        <label htmlFor="iceBreakerToggle" className="toggle-item">
+                            <div className="check"></div>
+                        </label>
+                        </div>
+                        <div className="toggle-speaker-name" data-cursor-exclusion>
+                            <span>Ice Breakers</span>
+                        </div>
+                    </div>
+                    </li>
+                    <li className="toggle-form">
+                     <div className="speaker-input-group">
+                        <div className="toggle" data-cursor-color="rgba(0,0,0,0.3)">
+                        <input id="fortuneCookieToggle" type="checkbox" onChange={handleFortuneCookieToggle} checked={!settings.showFortuneCookie} />
+                        <label htmlFor="fortuneCookieToggle" className="toggle-item">
+                            <div className="check"></div>
+                        </label>
+                        </div>
+                        <div className="toggle-speaker-name" data-cursor-exclusion>
+                            <span>Fortune Cookie</span>
+                        </div>
+                    </div>
                     </li>
                     <li className="toggle-form">
                         <div className="speaker-input-group">
@@ -76,19 +117,6 @@ const SettingsMenu:React.FC<Props> = ({switchTheme, switchDiamonds, showDiamonds
                         </div>
                     </li>
                    {settings.showDiamonds && <li className="inline-form">Diamonds <input type="number" min="0" max="44" value={settings.diamondCount} onChange={handleDiamonds} data-cursor-color="rgba(0,0,0,0.3)"/></li>}
-                    <li className="toggle-form">
-                     <div className="speaker-input-group">
-                        <div className="toggle" data-cursor-color="rgba(0,0,0,0.3)">
-                        <input id="iceBreakerToggle" type="checkbox" onChange={handleIceBreakersToggle} checked={!settings.showIceBreakers} />
-                        <label htmlFor="iceBreakerToggle" className="toggle-item">
-                            <div className="check"></div>
-                        </label>
-                        </div>
-                        <div className="toggle-speaker-name" data-cursor-exclusion>
-                            <span>IceBreakers</span>
-                        </div>
-                    </div>
-                    </li>
                     <li className="buttons">
                         <button onClick={handleResetSpeakers} data-cursor-color="rgba(0,0,0,0.3)">Reset</button>
                         <button onClick={showMenu} data-cursor-color="rgba(0,0,0,0.3)">Close</button>

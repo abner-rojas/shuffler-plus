@@ -1,6 +1,6 @@
 @use '../global/_typography' as *;
 
-.settings-menu{
+.config-menu{
     @extend .paragraph--1;
     min-width: 260px;
     background: var(--settings-menu-background-color);
@@ -10,13 +10,15 @@
     box-shadow: var(--settings-menu-shadow);
     color: white;
     position: absolute;
-    top: 0;
-    right: -600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 10;
     transition: all 1s ease;
+    opacity: 0;
 
     &.visible{
-        right: 0;
+        opacity: 1;
     }
 
     input[type="number"]{
@@ -50,27 +52,8 @@
 
             span{
                 cursor: pointer;
-                display: inline-flex;
-                align-items: center;
-                justify-content: start;
-                gap: 10px;
-
-                &::before{
-                    content: '';
-                    width: 4px;
-                    height: 4px;
-                    display: block;
-                    border-radius: 100%;
-                    background: transparent;
-                    position: relative;
-                }
 
                 &.active{
-                    &::before{
-                        content: '';
-                        background-color: #fff;
-                    }
-                    pointer-events: none;
                     font-weight: bold;
                 }
 

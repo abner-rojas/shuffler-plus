@@ -12,8 +12,10 @@ import SettingsMenu from './components/SettingsMenu'
 interface Settings {
   diamondCount: number,
   theme: string,
+  config: string,
   showDiamonds: boolean,
-  showIceBreakers: boolean
+  showIceBreakers: boolean,
+  showFortuneCookie: boolean
 }
 
 const sortSpeakers = (speakers: Array<Speaker>) => {
@@ -30,7 +32,7 @@ function App() {
 
   const timeElapsed = Date.now()
   const today = new Date(timeElapsed)
-  const defaultSettings = {diamondCount: 10, theme: 'beach', showIceBreakers: true, showDiamonds: false}
+  const defaultSettings = {config: 'squad-b', diamondCount: 10, theme: 'beach', showIceBreakers: true, showFortuneCookie: true, showDiamonds: false}
   const [loading, setLoading] = useState<boolean>(true)
   const [settings, setSettings] = useState<Settings>(defaultSettings)
   const [speakers, setSpeakers] = useState<Array<Speaker>>([])
@@ -55,17 +57,21 @@ function App() {
 
   }, [])
 
-  const getSpeakersFromJSON = async () => {
+  const getConfigFromJSON = async () => {
     //get speakers from json files
-    const response = await fetch('/settings-squad-b.json')
+    console.log('file', `/settings-${settings.config}.json`)
+    const response = await fetch(`/settings-${settings.config}.json`)
     const json = await response.json()
-
-    setSquadName(json.squad)
+    
+    //set the squad name
+    setSquadName(json[0].squad)
   
     //sort by role and alphabetize
     const sortedSpeakers: Array<Speaker> = sortSpeakers(json[0].team)
     localStorage.setItem('speakers', JSON.stringify(sortedSpeakers))
     setSpeakers(sortedSpeakers)
+
+    console.log('sordteSpeakers', sortedSpeakers)
   }
 
   const getQuestionsFromJSON = async () => {
@@ -90,9 +96,13 @@ function App() {
   }
 
   useEffect(() => {
+    getConfigFromJSON()
+  }, [settings.config]);
+
+  useEffect(() => {
     //get speakers from LocalStorage if set, otherwise get them from JSON
     if(localStorage.getItem('speakers') === null){
-        getSpeakersFromJSON()
+        getConfigFromJSON()
     } else {
         setSpeakers(JSON.parse(localStorage.getItem('speakers')!))
     }
@@ -119,7 +129,7 @@ function App() {
   const resetSpeakers = () => {
     localStorage.removeItem('speakers')
     localStorage.removeItem('settings')
-    getSpeakersFromJSON()
+    getConfigFromJSON()
     setSettings(defaultSettings)
     setStart(false)
   }
@@ -128,6 +138,16 @@ function App() {
   const switchTheme = (theme:any) => {
     localStorage.setItem('settings', JSON.stringify({...settings, theme: theme}))
     setSettings({...settings, theme: theme})
+  }
+
+  //handle squad config file
+  const switchSquad = (config:string) => {
+    localStorage.removeItem('speakers')
+    localStorage.removeItem('settings')
+    localStorage.setItem('settings', JSON.stringify({...settings, config: config}))
+    setSettings({...settings, config: config})
+
+    setStart(false)
   }
 
   //handle theme switch
@@ -148,6 +168,12 @@ function App() {
     setSettings({...settings, showIceBreakers: show})
   }
 
+  //handle fortune cookie show
+  const showFortuneCookie = (show:boolean) => {
+    localStorage.setItem('settings', JSON.stringify({...settings, showFortuneCookie: show}))
+    setSettings({...settings, showFortuneCookie: show})
+  }
+
   const handleStart = () => {
     setStart(true)
   }
@@ -159,7 +185,7 @@ function App() {
   return (
     <div className={`App theme-${settings.theme}`}>
       <Loading show={loading} />
-      <SettingsMenu switchTheme={switchTheme} switchDiamonds={switchDiamonds} showDiamonds={showDiamonds} switchIceBreakers={switchIceBreakers} resetSpeakers={resetSpeakers} settings={settings} />
+      <SettingsMenu switchSquad={switchSquad} switchTheme={switchTheme} switchDiamonds={switchDiamonds} showDiamonds={showDiamonds} switchIceBreakers={switchIceBreakers} showFortuneCookie={showFortuneCookie} resetSpeakers={resetSpeakers} settings={settings} />
       {settings.showDiamonds && <DiamondsBackground theme={settings.theme} diamondCount={settings.diamondCount} />}
       <div className="main-container padding--inline-2 padding--top-4 padding--bottom-2" style={{ backdropFilter: settings.showDiamonds ? 'unset': 'blur(4px)'}}>
         <Logo goHome={goHome} />
@@ -175,9 +201,9 @@ function App() {
             <button onClick={handleStart} data-cursor-color={"rgba(0,0,0,0.2)"} data-cursor-size={200}>Start</button>
           </div> 
         </div>
-        {start && <SpeakerNames speakers={speakers} questions={questions} showIceBreakers={settings.showIceBreakers} quotes={quotes} fortunes={fortunes} />} 
+        {start && <SpeakerNames speakers={speakers} questions={questions} showIceBreakers={settings.showIceBreakers} showFortuneCookie={settings.showFortuneCookie} quotes={quotes} fortunes={fortunes} />} 
       </div>
-      <Cursor isGelly={true} cursorBackgrounColor={"rgba(255,255,255,0.9"} cursorSize={44} />
+      <Cursor isGelly={true} cursorBackgrounColor={"rgba(255,255,255,0.9"} cursorSize={44} gellyAnimationAmount={100} />
     </div>
   )
 }

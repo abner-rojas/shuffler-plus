@@ -7,6 +7,8 @@ declare global{
         theme: string
         showIceBreakers: boolean
         showDiamonds: boolean
+        showFortuneCookie: boolean
+        config: string
     }
     
     interface Speaker {

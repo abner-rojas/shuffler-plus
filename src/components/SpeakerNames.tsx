@@ -5,13 +5,14 @@ interface Props{
     speakers: Array<Speaker>
     questions: Array<Question>
     showIceBreakers: Boolean
+    showFortuneCookie: Boolean
     quotes: Array<Quote>
     fortunes: Array<string>
 }
 
 const shuffleArray = (array:Array<Speaker>) => array.sort(() => 0.5 - Math.random());
 
-const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, quotes, fortunes}) => {
+const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, showFortuneCookie, quotes, fortunes}) => {
     
     const timeoutDelay = 1000
     const [currentSpeaker, setCurrentSpeaker] = useState(0)
@@ -85,7 +86,7 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, quo
             {!finished && <div className="window padding--inline-4 padding--block-4">
                 {speakersRoll.length > 0 ? <>
                     {location && <WeatherWidget city={location}/>}
-                    <div className="fortune-container">
+                    {showFortuneCookie && <div className="fortune-container">
                         <button onClick={handleFortuneButton} className="fortune-button" data-cursor-color={"rgba(0,0,0,0.44)"}>
                             <svg x="0px" y="0px" viewBox="0 0 512 512" xmlSpace="preserve">
                             <circle className='circle' cx="256" cy="256" r="256"/>
@@ -105,7 +106,8 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, quo
                             {fortune}
                             </div>}
                         </button>
-                    </div>
+                    </div>}
+                    
                     <h1 className={hideName ? "bigname margin--bottom-1 text-blur-out" : "bigname margin--bottom-1 text-focus-in"}>
                         {speakersRoll[currentSpeaker].name}
                     </h1>

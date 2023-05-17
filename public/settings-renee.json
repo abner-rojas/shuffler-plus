@@ -1,0 +1,50 @@
+[
+  {
+  "squad":"Content Team",
+  "team":
+  [
+    {
+      "id": 1,
+      "name": "Renee",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+    {
+      "id": 2,
+      "name": "Omar",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+    {
+      "id": 3,
+      "name": "Vio",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+    {
+      "id": 4,
+      "name": "Iris",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+    {
+      "id": 5,
+      "name": "Vero",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },   
+    {
+      "id": 6,
+      "name": "Karla",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    }  
+  ]
+  }
+]
