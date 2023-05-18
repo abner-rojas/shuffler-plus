@@ -1,0 +1,162 @@
+[
+  {
+  "squad":"Squad A",
+  "team":
+  [
+    {
+      "id": 1,
+      "name": "Joe Gold",
+      "role": "im",
+      "here": true,
+      "location": "Toronto, Canada"
+    },
+    {
+      "id": 2,
+      "name": "Taylor Noble",
+      "role": "im",
+      "here": true,
+      "location": "Toronto, Canada"
+    },
+    {
+      "id": 3,
+      "name": "Thilina Fernando",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+     {
+      "id": 4,
+      "name": "Denice Badua",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+    {
+      "id": 5,
+      "name": "Alexandra Wong",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+    {
+      "id": 6,
+      "name": "Haydee Martinez",
+      "role": "im",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 7,
+      "name": "Adnan Albared",
+      "role": "dev",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+     {
+      "id": 8,
+      "name": "Andres Muro",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 9,
+      "name": "Angel Flores",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 10,
+      "name": "Dani Chi Novelo",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 11,
+      "name": "Jim Hazlewood",
+      "role": "dev",
+      "here": true,
+      "location": "Toronto, Canada"
+    },
+    {
+      "id": 12,
+      "name": "Josh Carson",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 13,
+      "name": "Julieta Delgado",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 14,
+      "name": "Mario Ley Tello",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 15,
+      "name": "Victor Ortiz",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 16,
+      "name": "Jonathan MG",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 17,
+      "name": "Karla Rojas",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+     {
+      "id": 18,
+      "name": "Jared Mieles",
+      "role": "im",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+     {
+      "id": 19,
+      "name": "Lino Rodriguez",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 20,
+      "name": "Mario Cervantes",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 21,
+      "name": "Vero Ayala",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 22,
+      "name": "Zalmy Karimi",
+      "role": "dev",
+      "here": true,
+      "location": "Melbourne, Australia"
+    } 
+  ]
+  }
+]

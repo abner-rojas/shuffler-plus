@@ -62,6 +62,7 @@ const SettingsMenu:React.FC<Props> = ({switchSquad, switchTheme, switchDiamonds,
                 <ul className="paragraph-1 form padding--inline-2">
                     <li><div className="toggle-speaker-name">Squad</div>
                         <ul>
+                            <li><span onClick={handleSquadSwitch} className={settings.config == 'squad-a' ? 'active' : undefined} data-config="squad-a" data-cursor-color="rgba(0,0,0,0.3)">Squad A</span></li>
                             <li><span onClick={handleSquadSwitch} className={settings.config == 'squad-b' ? 'active' : undefined} data-config="squad-b" data-cursor-color="rgba(0,0,0,0.3)">Squad B</span></li>
                             <li><span onClick={handleSquadSwitch} className={settings.config == 'renee' ? 'active' : undefined} data-config="renee" data-cursor-color="rgba(0,0,0,0.3)">Content Team</span></li>
                         </ul>
