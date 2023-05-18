@@ -82,8 +82,9 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, sho
     }
 
     return (
-        <div className="speaker-names padding--inline-4 padding--block-4 slide-in-blurred-bottom">
-            {!finished && <div className="window padding--inline-4 padding--block-4">
+        <>
+        {!finished && <div className="speaker-names window padding--inline-4 padding--block-4 slide-in-blurred-bottom">
+            <div className="padding--inline-4 padding--block-4">
                 {speakersRoll.length > 0 ? <>
                     {location && <WeatherWidget city={location}/>}
                     {showFortuneCookie && <div className="fortune-container">
@@ -131,16 +132,18 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, sho
                     {currentSpeaker === speakersRoll.length - 1 && <button onClick={showInspirationalQuote} data-cursor-color={"rgba(0,0,0,0.2)"} data-cursor-size={200}>Finish</button>}
                 </div>
             </div>}
-            {finished && <div className="window padding--inline-4 padding--block-4 slide-in-blurred-bottom">
-                    <figure>
-                        <blockquote className="margin--bottom-2">
-                        <span className="quote">“</span><span>{quote.quote}</span><span className="quote">”</span>
-                        </blockquote>
-                        <figcaption>{quote.author}</figcaption>
-                    </figure>
-                </div>
-            }
         </div>
+        }
+        {finished && <div className="window padding--inline-4 padding--block-4 slide-in-blurred-bottom">
+            <figure>
+                <blockquote className="margin--bottom-2">
+                <span className="quote">“</span><span>{quote.quote}</span><span className="quote">”</span>
+                </blockquote>
+                <figcaption>{quote.author}</figcaption>
+            </figure>
+        </div>
+        }
+        </>
     )
 }
 

@@ -194,7 +194,7 @@ function App() {
         <div className={`speakers-setup window ${start ? 'slide-out-blurred-bottom' : null}`}>
           <Speakers updateSpeakers={updateSpeakers} speakers={speakers} />
           <hr />
-          <div className="padding--inline-2 padding--block-1 place-center">
+          <div className="speakers-footer padding--inline-2 padding--block-1 place-center">
             <button onClick={handleStart} data-cursor-color={"rgba(0,0,0,0.2)"} data-cursor-size={200}>Start</button>
           </div> 
         </div>

@@ -16,8 +16,13 @@
     background: var(--speakers-header-background);
     transition: 1s all var(--animation-curve);
     transition-delay: var(--speakers-header-transition-delay);
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+    border-top-right-radius: var(--window-border-radius);
+    border-top-left-radius: var(--window-border-radius);
+  }
+
+  .speakers-footer{
+    border-bottom-right-radius: var(--window-border-radius);
+    border-bottom-left-radius: var(--window-border-radius);
   }
   
   .form{
