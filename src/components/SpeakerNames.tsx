@@ -131,7 +131,7 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, sho
                     {currentSpeaker !== speakersRoll.length - 1 && <button onClick={nextSpeaker} disabled={currentSpeaker < speakersRoll.length - 1 ? false : true} data-cursor-color={"rgba(0,0,0,0.2)"} data-cursor-size={200}>Next</button>}
                     {currentSpeaker === speakersRoll.length - 1 && <button onClick={showInspirationalQuote} data-cursor-color={"rgba(0,0,0,0.2)"} data-cursor-size={200}>Finish</button>}
                 </div>
-            </div>}
+            </div>
         </div>
         }
         {finished && <div className="window padding--inline-4 padding--block-4 slide-in-blurred-bottom">
