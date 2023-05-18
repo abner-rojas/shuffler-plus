@@ -10,8 +10,10 @@
     place-items: center;
     animation-delay: 2s;
 
+
     .window{
         max-width: clamp(300px, 70vw, 90vw);
+        backdrop-filter: blur(10px);
     }
 
     .bigname{
@@ -25,7 +27,8 @@
     }
 
     .ice-breaker{
-        display: inline-block;
+        display: grid;
+        grid-template-columns: 1fr 25px;
         align-items: center;
         gap: 10px;
         // max-width: clamp(80%, 80%, 80%);
@@ -35,24 +38,34 @@
         -webkit-text-stroke-color: var(--ice-breaker-outline-color);
         text-shadow: var(--ice-breaker-text-shadow);
 
-        .pass{
-            display: inline;
-            font-size: 80%;
-            line-height: 1;
-            opacity: .7;
-            cursor: pointer;
-            transition: opacity 1s var(--animation-curve);
-            border: none;
-            background: none;
-            box-shadow: none;
 
-            &:hover{
-                opacity: 1;
-            }
-        }
 
     }
-    
+    .pass{
+        display: grid;
+        width: 25px;
+        height: 25px;
+        // // font-size: 80%;
+        // line-height: 1;
+        padding: 0;
+        justify-content: start;
+        align-items: start;
+        opacity: .7;
+        cursor: pointer;
+        transition: opacity 1s var(--animation-curve);
+        border: none;
+        background: none;
+        box-shadow: none;
+
+        svg{
+            width: 25px;
+            height: 25px;
+        }
+
+        &:hover{
+            opacity: 1;
+        }
+    } 
     .on-deck{
         display: grid;
         justify-content: end;

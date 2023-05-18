@@ -10,8 +10,8 @@
 
     //settings menu
     --settings-toggle-color: hsl(48, 100%, 50%, 90%);
-    --settings-menu-shadow: 0px 1px 14px var(--global-shadow-color);
-    --settings-menu-background-color: hsl(18, 97%, 51%);
+    --settings-menu-shadow: 0px 1px 60px var(--global-shadow-color);
+    --settings-menu-background-color: hsla(18, 97%, 51%, 0.80);
     --settings-menu-transition-delay: .2s;
 
     //main container
@@ -37,10 +37,10 @@
     --main-subheading-transition-delay: .2s;
 
     //window theme
-    --window-background-color-1: hsl(46, 72%, 58%, 40%);
+    --window-background-color-1: hsla(46, 72%, 58%, 0.599);
     --window-background-color-2: hsl(192, 94%, 32%, 40%);
-    --window-backdrop-filter: blur(4px);
-    --window-box-shadow: 0px 0px 40px 10px var(--global-shadow-color);
+    --window-backdrop-filter: blur(10px) sepia(90%);
+    --window-box-shadow: 0px 0px 80px 10px var(--global-shadow-color);
     --window-border: none;
     --window-border-radius: 10px;
     --window-transition-delay: .2s;
@@ -52,10 +52,10 @@
 
 
     //speakers-setup
-    --speakers-header-heading-color: hsl(202, 97%, 15%);
+    --speakers-header-heading-color: hsl(202, 96%, 21%);
     --speakers-header-heading-transition-delay: .4s;
     --speakers-header-background: hsl(188, 72%, 42%, 44%);
-    --speaker-setup-text-color: hsl(202, 97%, 27%, 90%);
+    --speaker-setup-text-color: hsla(202, 98%, 16%, 0.9);
     --speakers-header-transition-delay: .6s;
 
     //toggle button theme
@@ -73,7 +73,7 @@
     --button-border-width: 3px;
     --button-border-style: solid;
     --button-border-radius: 10px;
-    --button-text-color: hsl(18, 97%, 51%);
+    --button-text-color: hsl(18, 97%, 31%);
     --button-text-color-hover: hsl(18, 97%, 41%);
     --button-text-decoration: none;
     --button-text-decoration-hover: none;
@@ -83,7 +83,7 @@
     //speakers names
     --bigname-color: hsl(36, 100%, 50%);
     --bigname-transition-delay: .7s;
-    --bigname-stroke-width: 2px;
+    --bigname-stroke-width: 3px;
     --bigname-outline-color: hsl(0, 0%, 100%);
     --bigname-text-shadow: 0px 4px 14px hsl(50, 100%, 50%);
 

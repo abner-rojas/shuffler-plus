@@ -14,6 +14,7 @@
     right: -600px;
     z-index: 10;
     transition: all 1s ease;
+    backdrop-filter: blur(4px);
 
     &.visible{
         right: 0;

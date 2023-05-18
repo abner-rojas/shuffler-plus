@@ -180,7 +180,7 @@ function App() {
   }
 
   return (
-    <div className={`App theme-${settings.theme}`}>
+    <div className={`App theme-${settings.theme} diamonds-${settings.showDiamonds}`}>
       <Loading show={loading} />
       <SettingsMenu switchSquad={switchSquad} switchTheme={switchTheme} switchDiamonds={switchDiamonds} showDiamonds={showDiamonds} switchIceBreakers={switchIceBreakers} showFortuneCookie={showFortuneCookie} resetSpeakers={resetSpeakers} settings={settings} />
       {settings.showDiamonds && <DiamondsBackground theme={settings.theme} diamondCount={settings.diamondCount} />}

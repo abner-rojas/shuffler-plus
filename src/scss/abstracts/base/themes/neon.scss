@@ -1,6 +1,6 @@
 .theme-neon{
     --app-background-image: url('/backgrounds/neon.jpg');
-    --global-shadow-color: hsla(312, 97%, 44%, 1);
+    --global-shadow-color: rgb(255, 97, 223);
 
     //logo
     --logo-fill-background-arrow: rgba(255, 255, 255, 0.5);
@@ -26,7 +26,7 @@
 
     //main headings
     --main-heading-stroke-width: 2px;
-    --main-heading-outline-color: hsl(312, 100%, 93%);
+    --main-heading-outline-color: hsl(312, 100%, 50%);
     --main-heading-color: hsl(0, 0%, 100%);
     --main-heading-text-shadow: 0px 1px 14px var(--global-shadow-color);
     --main-subheading-stroke-width: 2px;
@@ -43,7 +43,7 @@
     --window-background-color-1: hsla(311, 100%, 26%, 0.4);
     --window-background-color-2: hsla(208, 88%, 26%, 0.4);
     --window-backdrop-filter: blur(4px);
-    --window-box-shadow: 0px 0px 40px 10px var(--global-shadow-color);
+    --window-box-shadow: 0px 0px 160px 10px var(--global-shadow-color);
     --window-border: 7px solid hsl(60, 0%, 99%);
     --window-border-radius: 10px;
     --window-transition-delay: .2s;
@@ -62,10 +62,10 @@
     --speakers-header-transition-delay: .6s;
 
     //toggle button theme
-    --toggle-label-background-color: rgba(0, 0, 0, 0.321);
-    --toggle-check-background-color: rgb(77, 255, 0);
-    --toggle-unchecked-background-color: rgb(255, 38, 0);
-    --toggle-icon-color: rgb(0, 0, 0);
+    --toggle-label-background-color: rgba(255, 121, 244, 0.528);
+    --toggle-check-background-color: rgb(255, 255, 255);
+    --toggle-unchecked-background-color: rgb(255, 255, 255);
+    --toggle-icon-color: rgb(255, 28, 255);
     --toggle-transition-delay: .7s;
     --toggle-speaker-name-text-shadow: 0px 1px 4px var(--global-shadow-color);
 
@@ -82,7 +82,7 @@
     --button-text-decoration: none;
     --button-text-decoration-hover: none;
     --button-transition-delay: unset;
-    --button-box-shadow: 0px 0px 40px 10px var(--global-shadow-color);
+    --button-box-shadow: 0px 0px 20px 1px var(--global-shadow-color);
 
 
     //speakers names

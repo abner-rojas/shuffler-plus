@@ -4,7 +4,6 @@
     transition: all 1s var(--animation-curve);
     transition-delay: var(--window-transition-delay);
     background: linear-gradient(180deg, var(--window-background-color-1) 44%, var(--window-background-color-2) 100%);
-    backdrop-filter: var(--window-backdrop-filter);
     box-shadow: var(--window-box-shadow);
     border: var(--window-border);
     border-radius: var(--window-border-radius);
@@ -22,6 +21,17 @@
         left: var(--window-decal-left);
         z-index: -1;
         animation: var(--window-decal-animation)
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: var(--window-backdrop-filter);
+        z-index: -1;
     }
 }
 
