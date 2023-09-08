@@ -1,5 +1,5 @@
 .loading{
-    background-color: #0B2A33;
+    background-color: #fff;
     width: 100%;
     height: 100%;
     display: block;
@@ -23,8 +23,8 @@
     }
 
     .logo{
-        --logo-fill-background-arrow: rgba(255, 255, 255, 0.5);
-        --logo-fill-foreground-arrow: hsl(0, 0%, 100%);
+        --logo-fill-background-arrow: hsla(233, 90%, 28%, 50%);
+        --logo-fill-foreground-arrow: hsla(233, 90%, 28%, 100%);
         --logo-fill-plus: hsl(209, 98%, 47%);
         --logo-transition-delay: .2s;
     }

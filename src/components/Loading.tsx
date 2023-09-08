@@ -1,5 +1,5 @@
-import loadingDiamond from '../assets/b.gif'
-import q4Logo from '../assets/q4.svg'
+// import loadingDiamond from '../assets/q4.gif'
+import q4Logo from '../assets/q4.gif'
 
 export default function Loading({show} : {show:boolean}){
 
@@ -19,7 +19,7 @@ export default function Loading({show} : {show:boolean}){
                 </svg>
             </div>
             <div className="images">
-                <img src={loadingDiamond} alt="Loading Diamond!" />
+                {/* <img src={loadingDiamond} alt="Loading Diamond!" /> */}
                 <img src={q4Logo} className="q4" alt="Q4 Logo" />
             </div>
         </div>

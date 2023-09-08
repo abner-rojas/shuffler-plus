@@ -84,7 +84,7 @@ const SpeakerNames:React.FC<Props> = ({speakers, questions, showIceBreakers, sho
     return (
         <>
         {!finished && <div className="speaker-names window padding--inline-4 padding--block-4 slide-in-blurred-bottom">
-            <div className="padding--inline-4 padding--block-4">
+            <div className="padding--block-4">
                 {speakersRoll.length > 0 ? <>
                     {location && <WeatherWidget city={location}/>}
                     {showFortuneCookie && <div className="fortune-container">
