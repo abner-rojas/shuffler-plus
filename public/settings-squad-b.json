@@ -102,13 +102,6 @@
       "location": "Toronto, Ontario"
     }, 
     {
-      "id": 25,
-      "name": "Daniel Gonzalez",
-      "role": "im",
-      "here": true,
-      "location": "Toronto, Ontario"
-    }, 
-    {
       "id": 27,
       "name": "Evelyn Villalta",
       "role": "dev",
@@ -130,20 +123,12 @@
       "location": "Mexico City, Mexico"
     },
     {
-      "id": 30,
-      "name": "Triola Jackson",
-      "role": "dev",
-      "here": true,
-      "location": "Zapopan, Jalisco, Mexico"
-    },
-    {
       "id": 31,
       "name": "Juan Varguez",
       "role": "dev",
       "here": true,
       "location": "Merida, Yucatan"
     }
-    
-  ]
+]
   }
 ]

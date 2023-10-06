@@ -74,20 +74,6 @@
       "location": "Mexico City, Mexico"
     },
     {
-      "id": 11,
-      "name": "Jim Hazlewood",
-      "role": "dev",
-      "here": true,
-      "location": "Toronto, Canada"
-    },
-    {
-      "id": 12,
-      "name": "Josh Carson",
-      "role": "dev",
-      "here": true,
-      "location": "Mexico City, Mexico"
-    },
-    {
       "id": 13,
       "name": "Julieta Delgado",
       "role": "dev",
