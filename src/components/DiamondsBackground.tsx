@@ -12,6 +12,8 @@ import neon from '../assets/backgrounds/neon.jpg'
 import valentine from '../assets/backgrounds/valentine.jpg'
 import carnival from '../assets/backgrounds/carnival.jpg'
 import stpatrick from '../assets/backgrounds/stpatricks.jpg'
+import halloween from '../assets/backgrounds/halloween.jpg'
+import dayofthedead from '../assets/backgrounds/dayofthedead.jpg'
 
 const backgroundImage:Record<string, string> = {
   beach,
@@ -20,7 +22,9 @@ const backgroundImage:Record<string, string> = {
   neon,
   valentine,
   carnival,
-  stpatrick
+  stpatrick,
+  halloween,
+  dayofthedead
 }
 
 function Background({theme}: {theme:string}) {

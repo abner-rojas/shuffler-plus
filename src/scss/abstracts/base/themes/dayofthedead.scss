@@ -1,0 +1,132 @@
+.theme-dayofthedead{
+    --app-background-image: url('/backgrounds/dayofthedead.jpg');
+    --global-shadow-color: rgba(0, 0, 0, 0.699);
+
+    //logo
+    --logo-fill-background-arrow: rgba(255, 255, 255, 0.5);
+    --logo-fill-foreground-arrow: hsl(0, 0%, 100%);
+    --logo-fill-plus: hsl(0, 100%, 50%);
+    --logo-transition-delay: .2s;
+
+    //settings menu
+    --settings-toggle-color: hsl(0, 0%, 100%);
+    --settings-menu-shadow: 0px 1px 14px var(--global-shadow-color);
+    --settings-menu-background-color: rgba(0, 0, 0, 0.656);
+    --settings-menu-transition-delay: .2s;
+    --settings-menu-border: 2px solid hsl(60, 0%, 99%);
+
+    //main container
+    --main-container-background-color: unset;
+    --main-container-text-color: hsl(0, 0%, 100%);
+
+    //hr theme
+    --hr-background-color: rgba(8, 8, 8, 0.223);
+    --hr-height: 1px;
+    --hr-transition-delay: .2s;
+
+    //main headings
+    --main-heading-stroke-width: 0px;
+    --main-heading-outline-color: #ff00d0;
+    --main-heading-color: rgb(255, 255, 255);
+    --main-heading-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --main-subheading-stroke-width: 0px;
+    --main-subheading-outline-color: #ff00d0;
+    --main-subheading-color: rgb(255, 255, 255);
+    --main-subheading-date-stroke-width: 0px;
+    --main-subheading-date-outline-color: rgb(0, 0, 0);
+    --main-subheading-date-color: rgb(255, 255, 255);
+    --main-subheading-text-shadow: 3px 4px 20px #030303;
+    --main-heading-transition-delay: .2s;
+    --main-subheading-transition-delay: .2s;
+
+    //window theme
+    --window-background-color-1: hsla(0, 0%, 100%, 0.724);
+    --window-background-color-2: hsla(0, 0%, 100%, 0.257);
+    --window-backdrop-filter: blur(8px);
+    --window-box-shadow: 0px 0px 160px 10px var(--global-shadow-color);
+    --window-border: 0px solid hsl(0, 0%, 1%);
+    --window-border-radius: 10px;
+    --window-transition-delay: .2s;
+    --window-decal-image: url('/skull.png');
+    --window-decal-width: 300px;
+    --window-decal-height: 300px;
+    --window-decal-top: -200px;
+    --window-decal-left: -140px;
+    // --window-decal-animation: rotation 10s infinite linear;
+
+    //speakers-setup
+    --speakers-header-heading-color: hsla(0, 0%, 0%, 0);
+    --speakers-header-heading-transition-delay: .4s;
+    --speakers-header-background: rgba(0, 0, 0, 0);
+    --speaker-setup-text-color: hsla(0, 0%, 20%, 0.9);
+    --speakers-header-transition-delay: .6s;
+
+    //toggle button theme
+    --toggle-label-background-color: hsla(0, 0%, 0%, 0.202);
+    --toggle-check-background-color: rgb(255, 255, 255);
+    --toggle-unchecked-background-color: rgb(255, 255, 255);
+    --toggle-icon-color: rgb(0, 0, 0);
+    --toggle-transition-delay: .7s;
+    --speaker-name-text-shadow: hsla(180, 33%, 1%, 0.631);
+    --toggle-speaker-name-text-shadow: 0px 1px 4px var(--speaker-name-text-shadow);
+
+    //button theme
+    --button-bg: hsl(0, 0%, 100%);
+    --button-bg-hover: hsl(0, 0%, 0%);
+    --button-border-color: hsla(320, 100%, 50%, 0);
+    --button-border-color-hover: hsl(320, 100%, 70%);
+    --button-border-width: 0px;
+    --button-border-style: solid;
+    --button-border-radius: 10px;
+    --button-text-color: hsl(0, 0%, 0%);
+    --button-text-color-hover: hsl(0, 0%, 100%);
+    --button-text-decoration: none;
+    --button-text-decoration-hover: none;
+    --button-transition-delay: unset;
+    --button-box-shadow: 0px 0px 20px 1px var(--global-shadow-color);
+
+
+    //speakers names
+    --bigname-color: #000000;
+    --bigname-transition-delay: .7s;
+    --bigname-stroke-width: 0px;
+    --bigname-outline-color: hsl(0, 0%, 0%);
+    --bigname-text-shadow: none;
+
+    --ice-breaker-color: #BC286C;
+    --ice-breaker-transition-delay: 1.3s;
+    --ice-breaker-stroke-width: 1px;
+    --ice-breaker-outline-color: none;
+    --ice-breaker-text-shadow: none;
+
+    --on-deck-color: hwb(0 33% 67%);
+    --on-deck-transition-delay: 1s;
+    --on-deck-stroke-width: 0px;
+    --on-deck-outline-color: hsl(312, 100%, 93%);
+    --on-deck-text-shadow: none;
+
+    //quotes
+    --quote-color: hsl(0, 0%, 100%);
+    --quote-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --quote-stroke-width: 0;
+    --quote-outline-color: unset;
+
+    --author-color: rgba(255, 255, 255, 0.885);
+    --author-text-shadow: 0px 1px 14px var(--global-shadow-color);
+    --author-stroke-width: 0;
+    --author-outline-color: unset;
+
+    //weather widget
+    --weather-stroke-width: 1px;
+    --weather-outline-color: none;
+    --weather-color: hsl(0, 0%, 100%);
+    --weather-text-shadow: 0px 1px 14px var(--global-shadow-color);
+
+    //fortune cookie
+    --fortune-background-color: hsla(0, 0%, 0%, 0.9);
+    --fortune-text-color: hsl(0, 0%, 100%);
+    --fortune-close-button-color: hsl(0, 0%, 100%);
+    --fortune-cookie-background-color: hsl(315, 93%, 21%);
+    --fortune-cookie-shadow-color: hsl(315, 95%, 7%);
+    --fortune-cookie-dropshadow-color: rgba(11, 42, 77, 0.627);
+}
