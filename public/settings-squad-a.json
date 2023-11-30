@@ -142,7 +142,14 @@
       "role": "dev",
       "here": true,
       "location": "Melbourne, Australia"
-    } 
+    },
+    {
+      "id": 23,
+      "name": "Eduardo Santos",
+      "role": "im",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    }
   ]
   }
 ]
