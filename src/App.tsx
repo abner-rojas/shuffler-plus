@@ -43,7 +43,7 @@ function App() {
   const [squadName, setSquadName] = useState<string>('Capybaras')
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 4000)
+    setTimeout(() => setLoading(false), 3000)
   }, [])
 
   //use default settting if localStorage settings not set
