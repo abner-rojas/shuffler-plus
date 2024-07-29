@@ -233,6 +233,13 @@
       "role": "dev",
       "here": true,
       "location": "Queretaro, Mexico"
+    },
+    {
+      "id": 35,
+      "name": "Brayden McCullagh",
+      "role": "lead",
+      "here": true,
+      "location": "Toronto, Canada"
     }
 
 ]
