@@ -1,0 +1,240 @@
+[
+  {
+  "squad":"Capybaras",
+  "team":
+  [
+    {
+      "id": 1,
+      "name": "Jen Grajkowski",
+      "role": "im",
+      "here": true,
+      "location": "Victoria, Canada"
+    },
+    {
+      "id": 2,
+      "name": "Luis Díaz",
+      "role": "im",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 3,
+      "name": "Abner Rojas",
+      "role": "dev",
+      "here": true,
+      "location": "Mississauga, Ontario, Canada"
+    },
+    {
+      "id": 4,
+      "name": "Augusto Rosas",
+      "role": "dev",
+      "here": true,
+      "location": "Merida, Yucatan"
+    },
+    {
+      "id": 5,
+      "name": "Cesar Villegas",
+      "role": "dev",
+      "here": true,
+      "location": "León, Guanajuato, Mexico"
+    },
+    {
+      "id": 6,
+      "name": "Jéssica Motta",
+      "role": "dev",
+      "here": true,
+      "location": "Florianopolis, Brazil"
+    },
+    {
+      "id": 7,
+      "name": "Marcos Herrera",
+      "role": "dev",
+      "here": true,
+      "location": "Tecate, Mexico"
+    },
+    {
+      "id": 8,
+      "name": "João Dantas",
+      "role": "dev",
+      "here": true,
+      "location": "Curitiba, Paraná, Brazil"
+    },
+    {
+      "id": 9,
+      "name": "Yannick Manzano",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    }, 
+    {
+      "id": 10,
+      "name": "Vio Villalta",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    }, 
+    {
+      "id": 11,
+      "name": "Juan Varguez",
+      "role": "dev",
+      "here": true,
+      "location": "Merida, Yucatan"
+    },
+    {
+      "id": 13,
+      "name": "Joe Gold",
+      "role": "lead",
+      "here": true,
+      "location": "Toronto, Canada"
+    },
+    {
+      "id": 14,
+      "name": "Thilina Fernando",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+     {
+      "id": 15,
+      "name": "D Badua",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+    {
+      "id": 16,
+      "name": "Bianca Bernardi",
+      "role": "im",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+    {
+      "id": 17,
+      "name": "Adnan Albared",
+      "role": "dev",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+     {
+      "id": 18,
+      "name": "Andres Muro",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 19,
+      "name": "Dani Chi Novelo",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 20,
+      "name": "Julieta Delgado",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 21,
+      "name": "Mario Ley Tello",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 22,
+      "name": "Victor Ortiz",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 23,
+      "name": "Jared Mieles",
+      "role": "im",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+     {
+      "id": 24,
+      "name": "Lino Rodriguez",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 25,
+      "name": "Mario Cervantes",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 26,
+      "name": "Iris Coronado",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 27,
+      "name": "Zalmy Karimi",
+      "role": "lead",
+      "here": true,
+      "location": "Aurora, Canada"
+    },
+    {
+      "id": 28,
+      "name": "Allwyn Aranha",
+      "role": "lead",
+      "here": true,
+      "location": "Melbourne, Australia"
+    },
+    {
+      "id": 29,
+      "name": "Mojdeh Ardestani",
+      "role": "lead",
+      "here": true,
+      "location": "Hamilton, Canada"
+    },
+    {
+      "id": 30,
+      "name": "Shuko Fujita",
+      "role": "im",
+      "here": true,
+      "location": "London, UK"
+    },
+    {
+      "id": 31,
+      "name": "Vasilen Minkov",
+      "role": "dev",
+      "here": true,
+      "location": "Pleven, Hungary"
+    },
+    {
+      "id": 32,
+      "name": "Yoomee Yoon",
+      "role": "im",
+      "here": true,
+      "location": "Melbourne, Australia"
+    },
+    {
+      "id": 33,
+      "name": "Karla Rojas",
+      "role": "dev",
+      "here": true,
+      "location": "Mexico City, Mexico"
+    },
+    {
+      "id": 34,
+      "name": "Arlette Lugo",
+      "role": "dev",
+      "here": true,
+      "location": "Queretaro, Mexico"
+    }
+
+]
+  }
+]

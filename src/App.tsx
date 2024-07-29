@@ -40,7 +40,7 @@ function App() {
   const [questions, setQuestions] = useState<Array<Question>>([])
   const [quotes, setQuotes] = useState<Array<Quote>>([])
   const [fortunes, setFortunes] = useState<Array<string>>([])
-  const [squadName, setSquadName] = useState<string>('Bumblebee Tuna')
+  const [squadName, setSquadName] = useState<string>('Capybaras')
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)

@@ -18,13 +18,6 @@
       "location": "Mexico City, Mexico"
     },
     {
-      "id": 6,
-      "name": "Julianna Hindemith",
-      "role": "im",
-      "here": true,
-      "location": "Vancouver, British Columbia, Canada"
-    },
-    {
       "id": 8,
       "name": "Abner Rojas",
       "role": "dev",
@@ -67,39 +60,11 @@
       "location": "Curitiba, Paraná, Brazil"
     },
     {
-      "id": 20,
-      "name": "Tyler Crone",
-      "role": "lead",
-      "here": true,
-      "location": "Hamilton, Ontario, Canada"
-    },
-    {
-      "id": 21,
-      "name": "Salena Fox",
-      "role": "lead",
-      "here": true,
-      "location": "Brantford, Canada"
-    },
-    {
-      "id": 22,
-      "name": "João Ferraz",
-      "role": "dev",
-      "here": true,
-      "location": "Florianopolis, Brazil"
-    }, 
-    {
       "id": 23,
       "name": "Yannick Manzano",
       "role": "dev",
       "here": true,
       "location": "Mexico City, Mexico"
-    }, 
-    {
-      "id": 24,
-      "name": "Alexandra Higuera",
-      "role": "im",
-      "here": true,
-      "location": "Toronto, Ontario"
     }, 
     {
       "id": 27,
@@ -108,13 +73,6 @@
       "here": true,
       "location": "Mexico City, Mexico"
     }, 
-    {
-      "id": 28,
-      "name": "Omar Torres",
-      "role": "dev",
-      "here": true,
-      "location": "Mexico City, Mexico"
-    },
     {
       "id": 31,
       "name": "Juan Varguez",
