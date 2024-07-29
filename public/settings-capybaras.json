@@ -240,8 +240,14 @@
       "role": "lead",
       "here": true,
       "location": "Toronto, Canada"
+    },
+    {
+      "id": 36,
+      "name": "Arely Rosas",
+      "role": "dev",
+      "here": true,
+      "location": "Veracruz, Mexico"
     }
-
-]
+  ]
   }
 ]
