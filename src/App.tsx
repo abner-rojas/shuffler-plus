@@ -32,7 +32,7 @@ function App() {
 
   const timeElapsed = Date.now()
   const today = new Date(timeElapsed)
-  const defaultSettings = {config: 'squad-b', diamondCount: 10, theme: 'beach', showIceBreakers: true, showFortuneCookie: true, showDiamonds: false}
+  const defaultSettings = {config: 'capybaras', diamondCount: 10, theme: 'neon', showIceBreakers: true, showFortuneCookie: true, showDiamonds: false}
   const [loading, setLoading] = useState<boolean>(true)
   const [settings, setSettings] = useState<Settings>(defaultSettings)
   const [speakers, setSpeakers] = useState<Array<Speaker>>([])
