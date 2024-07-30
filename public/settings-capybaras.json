@@ -247,6 +247,41 @@
       "role": "dev",
       "here": true,
       "location": "Veracruz, Mexico"
+    },
+    {
+      "id": 37,
+      "name": "Paco Ramirez",
+      "role": "dev",
+      "here": true,
+      "location": "Guadalajara, Mexico"
+    },
+    {
+      "id": 38,
+      "name": "Haley Morris",
+      "role": "im",
+      "here": true,
+      "location": "Toronto, Canada"
+    },
+    {
+      "id": 39,
+      "name": "Juan Agguire",
+      "role": "im",
+      "here": true,
+      "location": "Sonora, Mexico"
+    },
+    {
+      "id": 40,
+      "name": "Taylor Noble",
+      "role": "im",
+      "here": true,
+      "location": "Toronto, Canada"
+    }, 
+    {
+      "id": 41,
+      "name": "Karli Vold",
+      "role": "lead",
+      "here": true,
+      "location": "Toronto, Canada"
     }
   ]
   }
